@@ -1,0 +1,465 @@
+@charset  "UTF-8";
+
+/* CSS Document */
+/*  Reset for some default browser CSS - General */
+html,body {
+    color: #FFF;
+}
+
+body{    
+	font-family: Arial,san-serif;
+    font-size: 12px;
+    background-color: #494949;
+	}
+
+body,div,h1,h2,h3,p,img,header,section,aside,footer,button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+ul,ol,li{list-style: none;}	
+	
+a {
+    text-decoration: none;
+    color: #E1DF54;
+}
+
+a:hover {
+    color: #6f92a7;
+}
+
+h1,h2,h3 {
+    font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 28px;
+}	
+	
+#ganesh {
+    margin-left: 0px;
+    margin-top: 0px;/*-6.5px;*/
+	margin-bottom: 50px;
+    border: 5px solid #2B2B2B;
+	border-bottom: 8px solid #2B2B2B;
+    width: 190px;
+    height: 160px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	 border-radius: 5px;
+}
+
+#ganeshcap {
+	margin-top: -50px;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*Site Heading Start*/
+#header{
+		background: url(images/bck_head.png); 
+		-moz-box-shadow: inset 0 -2px 3px #480508;
+		-khtml-box-shadow: inset 0 -2px 3px #480508;
+		-webkit-box-shadow: inset 0 -2px 3px #480508;
+		box-shadow: inset 0 -2px 3px #480508;
+		border-bottom: 1px solid #fffffb;
+		display: block;
+		width:100%; 
+		/*border: 1px solid Blue;*/ 
+		min-width:890px; 
+		text-align: center; 
+		padding-bottom: 5px;
+		overflow: hidden; 
+}
+
+#heading{	
+	text-shadow: 3px 3px 3px #2c0306;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+	}
+
+#subheading1{}
+#subheading2{}
+/*Site Heading End*/
+
+/*Body & Nav Start*/
+#mainbody {width:810px; margin: 10px auto; /*border: 1px solid Blue;*/ margin-bottom: 10px;}
+#mainbody section{
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	display: inline-block; 
+	/*border: 1px solid Red; */
+	height:100%;
+	}
+
+	/*Left Side Start*/
+#leftbar{
+		width:25%; 
+		height:auto;
+		/*background: #2B2B2B;*/
+		float:left;
+		margin-top:0px;
+		}
+
+#leftcontainer{
+		width:99.6%; 
+		height:auto;
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+		margin-bottom:10px;
+		}
+	
+#leftbottomcontainer{
+		width:99.6%; 
+		height:60px;
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+		margin-top:10px;
+		margin-bottom:10px;
+		}		
+
+#google_translate_element{margin-left:25px;}	
+#grptrans p{margin-top:10px; text-align: center; margin-bottom:2px; padding-top:5px;}	
+		
+#sitelock{margin-left:50px;}
+		
+#indigo {
+    margin-left: -36px;	
+}
+
+#indigo li {
+    font: 200 13px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 0 solid #ccc;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+#indigo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#indigo:last-child {
+    border: none;
+}
+
+#indigo li a {
+    color: #000;
+    display: block;
+    width: 160px;
+    -webkit-transition: font-size .3s ease, background-color .3s ease;
+    -moz-transition: font-size .3s ease, background-color .3s ease;
+    -o-transition: font-size .3s ease, background-color .3s ease;
+    -ms-transition: font-size .3s ease, background-color .3s ease;
+    transition: font-size .3s ease, background-color .3s ease;
+}
+
+#indigo li a:hover {
+    font-size: 13px;
+    background: #4f1d1e;
+    color: #f6f6ee;
+}
+
+.button-link {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 1px rgba(0,0,0,0.2);
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button-link:hover {
+    background: #4f1d1e;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+
+.button-link:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0,0,0,0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0,0,0,0.6);
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+	/*Left Side End-*/
+
+
+
+	/*Right Side Start*/
+#rightbar{
+	width:72%;
+	margin-right:5px;
+	margin-left:5px;
+	/*border: 2px solid Blue;*/
+}
+
+
+		/*Page Heading Start*/
+#topbar{
+		width:103.5%; 
+		margin: auto; 
+		/*border: 1px solid Red; */
+		text-align: center;
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+}
+		
+#pagetitle{    
+	text-shadow: 3px 3px 3px #2c0306;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+	
+	}
+		/*Page Heading End*/
+
+#rightcontent{		
+		width:103.5%;  
+		margin: 10px auto; 
+		text-align: center;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+		}	
+
+/*___________________________________Separator___________________________________*/
+		
+#spectraldomainoct {
+		width:100%;
+		background: #2B2B2B;		
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+		}
+#spectraldomainoctsubcontainer section{display: inline-block;}	
+#spectraldomainoctleft{float: left; text-align: left; margin-left:0px; padding-top: 10px;}	
+#spectraldomainoctright{float: right; text-align: left; margin-left:10px; padding-top: 10px; width: 430px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#floaters {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+}
+#floaterssubcontainer section{display: inline-block;}	
+#floatersleft{float: left; text-align: left; margin-left:-10px; padding-top: 10px; width: 155px;}
+#floatersleft p {text-align: center; margin-top:-5px;  font-size: 10px;}	
+#floatersright{float: right; text-align: left; margin-left:5px; padding-top: 10px; width: 420px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#dryeyes {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;		
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+		}
+#dryeyessubcontainer section{display: inline-block;}	
+#dryeyesleft{float: left; text-align: left; margin-left:0px; padding-top: 10px;}	
+#dryeyesright{float: right; text-align: left; margin-left:10px; padding-top: 10px; width: 430px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#cataracts {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+}
+#cataractssubcontainer section{display: inline-block;}	
+#cataractsleft{float: left; text-align: left; margin-left:-10px; padding-top: 10px; width: 155px;}
+#cataractsleft p {text-align: center; margin-top:-5px;  font-size: 10px;}	
+#cataractsright{float: right; text-align: left; margin-left:5px; padding-top: 10px; width: 420px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#diabeticretinaldamage {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+}
+#diabeticretinaldamagesubcontainer section{display: inline-block;}	
+#diabeticretinaldamageleft{float: left; text-align: left; margin-left:-10px; padding-top: 10px; width: 155px;}
+#diabeticretinaldamageleft p {text-align: center; margin-top:-5px;  font-size: 10px;}	
+#diabeticretinaldamageright{float: right; text-align: left; margin-left:5px; padding-top: 10px; width: 420px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#glaucomas {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+}
+#glaucomassubcontainer section{display: inline-block;}	
+#glaucomasleft{float: left; text-align: left; margin-left:-10px; padding-top: 10px; width: 155px;}
+#glaucomasleft p {text-align: center; margin-top:-5px;  font-size: 10px;}	
+#glaucomasright{float: right; text-align: left; margin-left:5px; padding-top: 10px; width: 420px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#maculardegen {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+}
+#maculardegensubcontainer section{display: inline-block;}	
+#maculardegenleft{float: left; text-align: left; margin-left:-10px; padding-top: 10px; width: 155px;}
+#maculardegenleft p {text-align: center; margin-top:-5px;  font-size: 10px;}	
+#maculardegenright{float: right; text-align: left; margin-left:5px; padding-top: 10px; width: 420px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+#lowvision {
+		width:100%;
+		margin-top: 10px; 
+		background: #2B2B2B;		
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px
+		}
+#lowvisionsubcontainer section{display: inline-block;}	
+#lowvisionleft{float: left; text-align: left; margin-left:0px; padding-top: 10px;}	
+#lowvisionright{float: right; text-align: left; margin-left:10px; padding-top: 10px; width: 430px; height:auto;}
+
+/*___________________________________Separator___________________________________*/
+
+	/*Right Side End   */
+
+/*Body & Nav End-*/
+
+/*Lightbox Start  Reference: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/  */
+
+.litebox {
+    clear: none;
+    padding-bottom: 5px;
+}
+
+.litebox a {
+    display: block;
+    text-decoration: none;
+}
+
+.litebox a:hover {
+    position: relative;
+}
+
+.litebox span img {
+    border: 1px Transparent #000;
+    margin-bottom: 1px;
+}
+
+.litebox a span {
+    position: absolute;
+    display: none;
+    color: #FFF;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #E1DF54;
+    border: 3px solid #E1DF54;
+    font-weight: 700;
+    padding: 0.5px 0.5px 0.5px 0.5px;
+    width: 250px;
+    height: 238px;
+}
+
+.litebox img {
+    border: 0 Transparent Red;
+    border-width: 2px;
+}
+
+.litebox a:hover span {
+    display: block;
+    top: 1px;
+    right: 150px;
+    left: 100px;
+    z-index: 100;
+}
+/*Lightbox End*/
+
+.nolitebox img {
+		-webkit-filter: grayscale(110%);
+		-moz-filter: grayscale(110%);
+         -o-filter: grayscale(110%);
+        -ms-filter: grayscale(110%);
+            filter: grayscale(110%); 
+}
+
+
+
+/*Footer Start*/
+#footer{ 
+		-moz-box-shadow: inset 0 -2px 3px #480508;
+		-khtml-box-shadow: inset 0 -2px 3px #480508;
+		-webkit-box-shadow: inset 0 -2px 3px #480508;
+		box-shadow: inset 0 -2px 3px #480508;
+		padding-top:2px;
+		border-top: 1px solid #fffffb;
+		border-bottom: 1px solid #c9c9c0;
+		background: url(images/bck_footer.png);
+		width: 100%; 
+		min-width:890px;
+		margin: auto; 
+		/*border: 1px solid Blue; */
+		display: block;
+		text-align: center;
+		overflow: hidden;
+		/*margin-top: 50px;*/
+		}
+		
+#footer p {
+    text-align: center;
+    color: #b6b6ab;
+}
+/*Footer*/

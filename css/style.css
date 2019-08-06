@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  Reset for some default browser CSS - General */
+
+body, div, h1, h2, h3, p, img, header, section, aside, footer, button {
+	margin: 0; padding: 0; border: 0; list-style: none;
+}
+
+#head_nav ul, ol, li {
+	margin: 0; padding: 0; border: 0; list-style: none;
+}
+
+
+html, body {
+    /*overflow-x: hidden;*/
+	color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	color: #E1DF54;
+}
+
+a:hover {
+	color: #6f92a7;
+}
+
+:focus {
+	outline: 0;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	font-weight: normal;
+} 
+
+h2 {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+#float {
+		float:left;
+	}
+
+body {
+	font-family : Arial,san-serif;
+	font-size: 12px;
+	background-color: #494949;
+	}	
+
+/* Header */
+
+header#site_head {
+	background: url(images/bck_head.jpg);
+	-moz-box-shadow: inset 0px -2px 3px #480508;
+	-khtml-box-shadow: inset 0px -2px 3px #480508;
+	-webkit-box-shadow: inset 0px -2px 3px #480508;
+	box-shadow: inset 0px -2px 3px #480508;
+	border-bottom: 1px solid #fffffb;
+	height: 75px;
+	width: 100%;
+	display: block;
+	min-width: 830px;
+}
+
+	#header_cont {
+		width: auto;
+		margin: 0 auto;
+		padding-top: 5px;
+	}
+
+		#header_cont h1 {
+			text-indent:-9999px;
+			float: left;
+		}
+
+		#header_cont h1 a {
+			background: url(images/logo.png) no-repeat;
+			width: 205px;
+			height: 225px;
+			display: block;
+			text-decoration: none;
+			color: #E1DF54;
+		}
+
+		#header_cont p#bomg{
+				text-shadow: 3px 3px 3px #2c0306;
+				text-transform: capitalize;
+				font-size:28px;
+				font-weight: normal;
+				color: #FFFFFF;
+				position:relative;/*absolute;*/
+				text-align: center;
+		}
+		
+		#header_cont h1 a:hover {
+		
+		}
+
+		nav#head_nav {
+				position:relative;
+				text-align: center;
+			/*float: right;*/
+			margin-top: 8px;
+		}
+
+		nav#head_nav ul li {
+			display: inline;
+			margin: 0px 5px;
+		}	
+
+			nav#head_nav ul li a {
+				color: #E1DF54;
+				font-size: 12px;
+				font-weight: normal;
+				text-transform: capitalize;
+				padding: 4px 4px;
+			}
+
+			nav#head_nav ul li a:hover {
+				text-shadow: 1px 1px 1px #2c0306;
+				background: #4f1d1e;
+				-moz-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-moz-box-shadow: inset 0px 0px 2px #2c0306;
+				-khtml-box-shadow: inset 0px 0px 2px #2c0306;
+				-webkit-box-shadow: inset 0px 0px 2px #2c0306;
+				box-shadow: inset 0px 0px 2px #2c0306;
+				color: #f6f6ee;
+			}
+			
+		#pagename{				
+				text-shadow: 3px 3px 3px #2c0306;
+				text-transform: capitalize;
+				font-size:24px;
+				font-weight: normal;
+				color: white;
+				position:relative;/*absolute;*/
+				text-align: center;	
+				}
+			
+			
+	#bomglocation a{padding: 5px 5px 5px 5px;	}	
+
+	#bomglocation a:hover {
+				text-shadow: 1px 1px 1px #2c0306;
+				background: #4f1d1e;
+				-moz-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-moz-box-shadow: inset 0px 0px 2px #2c0306;
+				-khtml-box-shadow: inset 0px 0px 2px #2c0306;
+				-webkit-box-shadow: inset 0px 0px 2px #2c0306;
+				box-shadow: inset 0px 0px 2px #2c0306;
+				color: #f6f6ee;
+				padding: 5px 5px 5px 5px;
+	}
+
+	#bomglocation{
+		  width: 800px;
+		  height: 5%;
+		  background: #2B2B2B;
+		  border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  -webkit-border-radius: 5px;
+		  border: 0px solid #000000;    
+		  position:relative;
+		  margin: 10px auto;
+		  padding: 5px 15px 5px 15px;
+		  text-align: center; 
+		  text-transform: capitalize;
+	}
+	
+	#pageheader a{padding: 5px 5px 5px 5px;	}
+	
+	#pageheader a:hover {
+				text-shadow: 1px 1px 1px #2c0306;
+				background: #4f1d1e;
+				-moz-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-moz-box-shadow: inset 0px 0px 2px #2c0306;
+				-khtml-box-shadow: inset 0px 0px 2px #2c0306;
+				-webkit-box-shadow: inset 0px 0px 2px #2c0306;
+				box-shadow: inset 0px 0px 2px #2c0306;
+				color: #f6f6ee;
+				padding: 5px 5px 5px 5px;
+	}
+	
+	#pageheader{
+		  width: 800px;
+		  height: 5%;
+		  background: #2B2B2B;
+		  border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  -webkit-border-radius: 5px;
+		  border: 0px solid #000000;    
+		  position:relative;
+		  margin: 10px auto;
+		  padding: 5px 15px 5px 15px;
+	}
+	
+	#mainbody{
+		  width: 800px;
+		  height: 1080px;
+		  background: #2B2B2B;
+		  border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  -webkit-border-radius: 5px;
+		  border: 0px solid #000000;    
+		  position:relative;
+		  margin: 10px auto;
+		  padding: 10px 15px 55px 15px;
+		  
+	}
+	
+	/* Our Doctors */
+		#container1 section{display: inline-block; padding-bottom:5px;}
+		#profilename{padding-left:10px; padding-bottom:2px;}
+		#profilepic1{clear:left; width:400px; margin:0; padding:1em; position:relative;}
+		#profilepic2{clear:left; width:295px; margin:0; padding:1em; position:relative;}
+		#profilehistory {padding:1em; position:absolute; float: right;}
+		#profileextras {padding-left:10px; padding-Top:-20px;}
+		#profileextras section{padding-Top:20px;}
+		#rlitwin{padding-bottom:30px;}
+		#rmichelsen{padding-bottom:60px;}
+	
+	/* Resources*/
+		#mainlist  li {list-style:square; padding-Top:5px;}
+		#sublist  li  {list-style: circle; padding-Top:5px;}
+		#insurance div{display: inline-block; padding-bottom:5px;}
+		.insleft{clear:left; width:295px; margin:0; padding:1em; position:relative; margin-left:17%; margin-right:auto;}
+		.insright{padding:1em; position:absolute; float: right; margin-left:auto%; margin-right:auto;}
+		.insright #profilename{padding-left:15px; }
+		.alertcap{text-align: center;}
+		.minusten{margin-left:-13%; margin-right:auto;}
+		.capcenter{  
+				width: 235px;
+				height: 115px;
+				position:relative;
+				margin-left:36%;
+				margin-right:auto;
+		}
+		#forms p{padding-Top:10px; padding-left:15px;}
+	
+	/* Resources Tops*/
+		#affordability{padding-Top:30px;}
+		#insurance{padding-Top:30px;}
+		#forms{padding-Top:30px;}
+		
+	/* Parking*/
+	#parkinggroup{display: inline-block; padding-bottom:5px;}
+	#parkingcontainer{float:left; margin:0; padding:1em; position:relative; height:auto; width:500px;}
+	#informationcontainer{position:relative; float: right; height:auto; width:auto;  margin-left:40px;}
+	
+	/* Common */
+	
+	
+	
+	/* Orders */
+	#frames {
+	float: left;
+	width: 950px;
+	height: 1450px;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+	
+	/* Footer */
+		#container{height: 100%; padding-bottom: 50px;}
+		#push {clear: both; height:10px; padding-bottom:30px;} 
+		
+		footer#bottom  {
+		background: url(images/bck_footer.jpg);
+		-moz-box-shadow: inset 0px -2px 3px #480508;
+		-khtml-box-shadow: inset 0px -2px 3px #480508;
+		-webkit-box-shadow: inset 0px -2px 3px #480508;
+		box-shadow: inset 0px -2px 3px #480508;
+		border-Top: 1px solid #fffffb;
+		border-bottom: 1px solid #c9c9c0;
+		height: 50px;
+		width: 100%;
+		display: block;
+		padding-top: 2px;
+		position: relative;
+		margin-top: -50px; /* negative value of footer height */
+		min-width: 830px;
+		}
+		
+		footer#bottom p {
+		text-align: center;
+		color: #b6b6ab;
+		}
+	
+
+	hr { 
+		background: url(images/bck_footer.jpg);
+		display: block; 
+		height: 12px;
+		width: 800px;
+		border: 1px solid #494949;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-box-shadow: inset 10px 10px -10px #E1DF54;
+		-khtml-box-shadow: inset 10px 10px -10px #E1DF54;
+		-webkit-box-shadow: inset 10px 10px -10px #E1DF54;
+		box-shadow: inset 0 10px 10px -10px #E1DF54;
+		margin: 1em 0; 
+		padding: 0; 
+	}		
+
+	
+	/* Hide Sections */
+	    .ourhome{display: none;}
+		.ourdoctors{display: block;}
+		.ourpractice{display: none;}
+		.ourparking{display: none;}
+		.ourcommon{display: none;}
+		.ourorder{display: none;}
