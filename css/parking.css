@@ -293,14 +293,14 @@ font-size:2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
-    text-align: left;
-    background: #2B2B2B;
-    border-radius: 5px;
+    margin: 0rem auto;    
 }
 
 #parking {
-    width: 100%;    
+    width: 100%;
+    background: #2B2B2B;
+    border-radius: 5px;
+    padding-top: 5rem;
 }
 
 #pagetitle1 {
@@ -341,18 +341,19 @@ font-size:2rem;
     padding-top: 2rem;
 }
 
-#rightcontent2 {
-    width: 100%;
-    margin: 0 auto;
-    padding:10px 0 10px 10px;
-    text-align: left;
+#publicTransit {    
+    font-size: 1.6rem;
+    color: #FFF;
+    margin-top: 0.5rem;
     background: #2B2B2B;
     border-radius: 5px;
+    padding-bottom: 5rem;
 }
 
-#topBar {
-    width: 100%;   
-    padding-bottom: 3rem;
+#topBar { 
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
 }
 
 #pagetitle2 {
@@ -361,18 +362,11 @@ font-size:2rem;
     font-size: 3rem;
     font-weight: 400;
     color: #FFF;
-    text-align: center; 
 }
 
-#click {
-    font-size: 1.6rem;
-    text-align: center;
-}
-
-#publicTransit {    
-    font-size: 1.6rem;
-    color: #FFF;
-    padding-left: 25%;
+#transitOptions {
+    display: flex;
+    width: 100%;
 }
 
 #publicTransit h3 {
@@ -382,8 +376,14 @@ font-size:2rem;
     font-weight: 400;
 }
 
-#publicTransit p{
-    text-decoration: none;
+#acTransit {
+    width: 40%;
+    padding-left: 10%; 
+}
+
+#bart {
+    width: 40%;
+    padding-left: 5%;
 }
 /*Right Side End   */
 

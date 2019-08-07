@@ -8,7 +8,7 @@
     <meta content="public" http-equiv="Cache-control">
     <link rel="stylesheet" href="css/parking.css" media="screen" type="text/css" cache-control: private, max-age=0, no-cache>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="social.css" media="screen" type="text/css" cache-control: private, max-age=0, no-cache>
+    <link rel="stylesheet" href="css/social.css" media="screen" type="text/css" cache-control: private, max-age=0, no-cache>
 	<script type="text/javascript" src="modernizr.js"></script>
     <title>Berkeley Ophthalmology Medical Group, Inc.</title>
     <link href="https://www.bomg.org/favicon.ico" rel="shortcut icon">
@@ -39,7 +39,7 @@
     
 
         <section id="rightcontent">
-            <section id="parking">
+            <div id="parking">
                 <p id="pagetitle1">Directions & Parking</p>                
             
                 <section id="parkingsubcontainer">
@@ -74,31 +74,35 @@
                                 <li>&nbsp;</li>
                                 <li>Please give parking lot ticket to reception for Validation</li>
                             </ul>
-                    </li>
+                        </li>                       
                     </ul>
                 </section>
-            </section>                       
-        </section>    
-        
-        <section id="rightcontent2">  
-            <section id="topBar">                
-                <br/>
-                <p id="pagetitle2">Public Transit</p>
-                <p id="click">(Click Below for Real Time Departures)</p>
-                <br/> 
-            </section>
+            </div>                       
+       
+            <div id="publicTransit">
+                <section id="topBar">                
+                    <br/>
+                    <p id="pagetitle2">Public Transit</p>
+                    <p id="click">(Click Below for Real Time Departures)</p>
+                    <br/> 
+                </section>
 
-            <section id="publicTransit">
-                <h3><b>AC</b> Transit</h3>
-                <a href="http://www.nextbus.com/?a=actransit#!/actransit/80/80_5_0/0300880" class="fa fa-bus actransit" target="_blank" title="AC Transit Route 80">&nbsp;80</a>
-                <a href="http://www.nextbus.com/?a=actransit#!/actransit/81/81_5_0/0300880" class="fa fa-bus actransit" target="_blank" title="AC Transit Route 81">&nbsp;81</a>
-                <br/><br/><br/>
-                <h3><b>B</b>ay <b>A</b>rea <b>R</b>apid <b>T</b>ransit</h3>
-                <a href="http://www.bart.gov/schedules/eta?stn=MCAR" class="fa fa-train bart" target="_blank" title="BART Real Time Departures">&nbsp;(MacArthur Station)</a>   
-                <p>Take the Alta Bates Shuttle. It runs about every 20 mins</p><br/><br/>
-                <a href="http://www.bart.gov/schedules/eta?stn=ASHB" class="fa fa-train bart" target="_blank" title="BART Real Time Departures">&nbsp;(Ashby Bart Station)</a>  
-                <p>about a 30 min Walk</p>
-            </section>
+                <div id="transitOptions">
+                    <div id="acTransit">
+                        <h3><b>AC</b> Transit</h3>
+                        <a href="http://www.nextbus.com/?a=actransit#!/actransit/80/80_5_0/0300880" class="fa fa-bus actransit" target="_blank" title="AC Transit Route 80">&nbsp;80</a>
+                        <a href="http://www.nextbus.com/?a=actransit#!/actransit/81/81_5_0/0300880" class="fa fa-bus actransit" target="_blank" title="AC Transit Route 81">&nbsp;81</a>
+                        <br/><br/><br/>
+                    </div>
+                    <div id="bart">
+                        <h3><b>B</b>ay <b>A</b>rea <b>R</b>apid <b>T</b>ransit</h3>
+                        <a href="http://www.bart.gov/schedules/eta?stn=MCAR" class="fa fa-train bart" target="_blank" title="BART Real Time Departures"></a> &nbsp;(MacArthur Station)  
+                        <p>Take the Alta Bates Shuttle. It runs about every 20 mins</p><br/><br/>
+                        <a href="http://www.bart.gov/schedules/eta?stn=ASHB" class="fa fa-train bart" target="_blank" title="BART Real Time Departures"></a>&nbsp;(Ashby Bart Station)  
+                        <p>about a 30 min Walk</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
 </div>
