@@ -10,7 +10,9 @@ html,body {
 body{    
 	font-family: Arial,san-serif;
     background-color: #494949;
+    max-width: 100%;
     margin: 0, auto;
+    box-sizing: border-box;
 	}
 
 body,div,h1,h2,h3,p,img,header,section,aside,footer,button{
@@ -289,6 +291,12 @@ font-size:2rem;
     height: auto;
 }
 
+@media (max-width: 900px) {
+    #rightbar {
+        width: 100%;
+    }
+}
+
 #rightcontent {    
     width: 100%;
     display: flex;
@@ -330,6 +338,14 @@ font-size:2rem;
 #listtitle2 {    
     font-size: 1.6rem;
     padding-left: 25%;
+    height: 500px;
+}
+
+@media (max-width: 640px) {
+    #listtitle2 {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
 }
 
 #parkingTitle {
@@ -369,6 +385,15 @@ font-size:2rem;
     width: 100%;
 }
 
+@media (max-width: 640px) {
+    #transitOptions {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        padding-left: 2%;
+    }
+}
+
 #publicTransit h3 {
     text-shadow: 1px 1px 1px #000;
     text-transform: capitalize;
@@ -381,9 +406,23 @@ font-size:2rem;
     padding-left: 10%; 
 }
 
+@media (max-width: 640px) {
+    #acTransit {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 #bart {
     width: 40%;
     padding-left: 5%;
+}
+
+@media (max-width: 640px) {
+    #bart {
+        width: 100%;
+        padding: 0;
+    }
 }
 /*Right Side End   */
 
@@ -410,21 +449,24 @@ font-size:2rem;
 @media (max-width: 640px) {
     #bottomContainer {
         flex-direction: column-reverse;
+        margin-bottom: 1rem;
     }
 
     #bottomSection {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         font-size: 2.5rem;
         padding-left: 10%;
     }
 
     #links {
         padding-bottom: 5rem;
+        font-size: 2rem;
     }
 
     #Connect {
         padding-bottom: 5rem;
+        font-size: 2rem;
     }
 
     #sitelock {
@@ -449,8 +491,7 @@ font-size:2rem;
     border-radius: 0.5rem;
 }
 
-#bottomFooter{
-    display: flex;
+#bottomFooter {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -459,14 +500,24 @@ font-size:2rem;
 #footerButtons {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 640px) {
+    #bottomFooter {
+        margin-top: 0;
+    }
+
     #footerButtons {
-        font-size: 1.6rem;
+        font-size: 2rem;  
+    }
+
+    #footerButtons a {
+        line-height: 4rem;
+        flex-basis: 280px;
     }
 
 }
