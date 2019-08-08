@@ -310,7 +310,7 @@ font-size:2rem;
 #pagetitle {
 	text-shadow: 3px 3px 3px #2c0306;
 	text-transform: capitalize;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: 400;
 	color: #FFF;
 	text-align: center;
@@ -324,31 +324,84 @@ font-size:2rem;
 
 #insurance {
 	background: #2B2B2B;
-	padding: 1rem;
+	padding-top:1rem;
 	margin-top: 0.5rem;
-	width: 100%
+	width: 100%;
 }
 
 #insurance h2 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 3rem;
+}
+
+#insuranceInfo {
+	font-size: 2rem;
+	padding-top: 5rem;
+	padding-left: 35%;;
+}
+
+@media (max-width: 1200px) {
+	#insuranceInfo {
+		padding-left: 30%;
+	}
+}
+
+@media (max-width: 640px) {
+	#insuranceInfo {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 500px) {
+	#insuranceInfo {
+		padding-left: 5%;
+	}
 }
 
 #forms {
 	background: #2B2B2B;
-	padding: 10px;
+	padding-top: 1rem;
 	margin-top: 0.5rem;
-	width: 100%
+	width: 100%;
+
 }
 
-#forms p {
-	padding-top: 10px;
-	padding-left: 15px;
+#forms h2 {
+	width: 100%;
+	padding-top: 1rem;
+	text-align: center;
+	font-size: 3rem;
 }
 
-#forms h1 {
-	padding-top: 10px;
+#formsDirections {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+#formsLinks {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 30%;
+	font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+	#formsLinks {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 1100px) {
+	#formsLinks {
+		padding-left: 15%;
+	}
+}
+
+@media (max-width: 640px) {
+	#formsLinks {
+		padding-left: 5%;
+	}
 }
 /*Right Side End */
 
