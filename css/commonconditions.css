@@ -40,8 +40,8 @@ h1,h2,h3 {
 }
 
 h2 {
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 1.8rem;
+	line-height: 2.8rem;
 }
 
 /*Body*/
@@ -62,7 +62,6 @@ h2 {
 
 #mainbody section{
     border-radius: 5px; 
-	display: inline-block; 
 	height: auto;
 }
 
@@ -324,284 +323,35 @@ font-size:2rem;
 
 /*___________________________________Separator___________________________________*/
 
-#spectraldomainoct {
+.container {
 	width: 100%;
+	margin-top: 0.5rem;
 	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
+	border-radius: 5px;
 }
 
-#spectraldomainoctsubcontainer section {
-	display: inline-block;
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;	
 }
 
-#spectraldomainoctleft {
-	float: left;
-	text-align: left;
-	margin-left: 0px;
-	padding-top: 10px;
+.boxLeft {
+	width: 35%;		
 }
 
-#spectraldomainoctright {
-	float: right;
-	text-align: left;
-	margin-left: 10px;
-	padding-top: 10px;
-	width: 430px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#floaters {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#floaterssubcontainer section {
-	display: inline-block;
-}
-
-#floatersleft {
-	float: left;
-	text-align: left;
-	margin-left: -10px;
-	padding-top: 10px;
-	width: 155px;
-}
-
-#floatersleft p {
+.boxLeft p{
 	text-align: center;
-	margin-top: -5px;
-	font-size: 10px;
+	font-size: 1.4rem;
 }
 
-#floatersright {
-	float: right;
-	text-align: left;
-	margin-left: 5px;
-	padding-top: 10px;
-	width: 420px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#dryeyes {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#dryeyessubcontainer section {
-	display: inline-block;
-}
-
-#dryeyesleft {
-	float: left;
-	text-align: left;
-	margin-left: 0px;
-	padding-top: 10px;
-}
-
-#dryeyesright {
-	float: right;
-	text-align: left;
-	margin-left: 10px;
-	padding-top: 10px;
-	width: 430px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#cataracts {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#cataractssubcontainer section {
-	display: inline-block;
-}
-
-#cataractsleft {
-	float: left;
-	text-align: left;
-	margin-left: -10px;
-	padding-top: 10px;
-	width: 155px;
-}
-
-#cataractsleft p {
-	text-align: center;
-	margin-top: -5px;
-	font-size: 10px;
-}
-
-#cataractsright {
-	float: right;
-	text-align: left;
-	margin-left: 5px;
-	padding-top: 10px;
-	width: 420px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#diabeticretinaldamage {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#diabeticretinaldamagesubcontainer section {
-	display: inline-block;
-}
-
-#diabeticretinaldamageleft {
-	float: left;
-	text-align: left;
-	margin-left: -10px;
-	padding-top: 10px;
-	width: 155px;
-}
-
-#diabeticretinaldamageleft p {
-	text-align: center;
-	margin-top: -5px;
-	font-size: 10px;
-}
-
-#diabeticretinaldamageright {
-	float: right;
-	text-align: left;
-	margin-left: 5px;
-	padding-top: 10px;
-	width: 420px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#glaucomas {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#glaucomassubcontainer section {
-	display: inline-block;
-}
-
-#glaucomasleft {
-	float: left;
-	text-align: left;
-	margin-left: -10px;
-	padding-top: 10px;
-	width: 155px;
-}
-
-#glaucomasleft p {
-	text-align: center;
-	margin-top: -5px;
-	font-size: 10px;
-}
-
-#glaucomasright {
-	float: right;
-	text-align: left;
-	margin-left: 5px;
-	padding-top: 10px;
-	width: 420px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#maculardegen {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#maculardegensubcontainer section {
-	display: inline-block;
-}
-
-#maculardegenleft {
-	float: left;
-	text-align: left;
-	margin-left: -10px;
-	padding-top: 10px;
-	width: 155px;
-}
-
-#maculardegenleft p {
-	text-align: center;
-	margin-top: -5px;
-	font-size: 10px;
-}
-
-#maculardegenright {
-	float: right;
-	text-align: left;
-	margin-left: 5px;
-	padding-top: 10px;
-	width: 420px;
-	height: auto;
-}
-
-/*___________________________________Separator___________________________________*/
-
-#lowvision {
-	width: 100%;
-	margin-top: 10px;
-	background: #2B2B2B;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
-
-#lowvisionsubcontainer section {
-	display: inline-block;
-}
-
-#lowvisionleft {
-	float: left;
-	text-align: left;
-	margin-left: 0px;
-	padding-top: 10px;
-}
-
-#lowvisionright {
-	float: right;
-	text-align: left;
-	margin-left: 10px;
-	padding-top: 10px;
-	width: 430px;
-	height: auto;
+.boxRight {
+	width: 60%;
+	font-size: 2rem;
+	padding-right: 1%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 /*Right Side End   */
 
@@ -705,7 +455,7 @@ font-size:2rem;
 /*Lightbox Start  Reference: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/  */
 .litebox {
 	clear: none;
-	padding-bottom: 5px;
+	padding-bottom: 0.5rem;
 }
 
 .litebox a {
@@ -720,24 +470,21 @@ font-size:2rem;
 .litebox span img {
 	border: 1px Transparent #000;
 	margin-bottom: 1px;
+	height: auto;
+	width: 80rem;
+	background-color: #E1DF54;
+	border: 3px solid #E1DF54;
 }
 
 .litebox a span {
 	position: absolute;
-	display: none;
-	color: #FFF;
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	background-color: #E1DF54;
-	border: 3px solid #E1DF54;
-	font-weight: 700;
-	padding: 0.5px 0.5px 0.5px 0.5px;
-	width: 250px;
-	height: 238px;
+	display: none;	
+	padding: 0.5px 0.5px 0.5px 0.5px;	
 }
 
 .litebox img {
+	height: auto;
+	width: 100%;
 	border: 0 Transparent Red;
 	border-width: 2px;
 }
@@ -749,7 +496,6 @@ font-size:2rem;
 	left: 100px;
 	z-index: 100;
 }
-
 /*Lightbox End*/
 
 .nolitebox img {
