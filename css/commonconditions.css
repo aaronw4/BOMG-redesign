@@ -350,7 +350,28 @@ font-size:2rem;
 	font-size: 2rem;
 	padding-right: 1%;
 	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .boxLeft {
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    .boxLeft p {
+        font-size: 2.5rem;
+    }
+
+    .boxRight{
+        padding-top: 20px;
+        width: 90%;
+        font-size: 3rem;
+    }
 }
 /*Right Side End   */
 
