@@ -48,7 +48,7 @@ h2 {
 		display: block;
 		width:100%; 
 		text-align: center;        
-        padding-top: 1rem;
+        padding-top: 50px;
         padding-bottom: 2.8rem; 
 }
 
@@ -60,8 +60,8 @@ h2 {
 }
 
 #header p{
-    font-size: 2.5rem;
-    padding-top: 2rem;
+    font-size: 3.5rem;
+    padding-top: 10px;
 }
 
 @media (max-width: 1160px) {
@@ -86,7 +86,7 @@ h2 {
 #heading{	
 	text-shadow: 3px 3px 3px #2c0306;
     text-transform: capitalize;
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 400;
     color: #FFF;
     position: relative;
@@ -114,7 +114,8 @@ h2 {
 #subheading2 {
     color:red;
     font-weight:bold;
-    font-size:2rem;
+    font-size: 3rem;
+    padding-top: 10px;
 }
 
 @media (max-width: 1160px) {
@@ -178,7 +179,7 @@ h2 {
     border-bottom: 0.8rem solid #2B2B2B; 
     margin-left: 2%; 
     margin-top: 2%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 900px){
@@ -223,7 +224,7 @@ h2 {
     padding-left: 0;
     margin-left: 2%;
     margin-right: 2%; 
-    font: 200 1.6rem/1.5 Helvetica, Verdana, sans-serif;
+    font: 200 2.5rem/1.5 Helvetica, Verdana, sans-serif;
     border-bottom: 0 solid #ccc;
     font-weight: 700;
     padding-bottom: 13px;    
@@ -232,8 +233,8 @@ h2 {
 #indigo a {
     color: #000;
     width: 95%;    
-    padding: 20px 0;
-    margin-bottom: 27px;
+    padding: 25px 0;
+    margin-bottom: 15px;
     text-align: center;
     background: #4479BA;    
     border-radius: 0.4rem;
@@ -292,19 +293,21 @@ h2 {
 /*Page Heading Start*/
 #topbar{
     width:100%; 
-    padding: 2rem 0rem;
+    padding: 50px 0;
     text-align: center;
-    background: #2B2B2B;
+    background: #2B2B2B;    
+    border-radius: 5px; 
+    margin-bottom: 5px;
 }
 
 #topbar span {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
 }
 		
 #pagetitle{    
 	text-shadow: 3px 3px 3px #2c0306;
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #FFF;
     position: relative;
@@ -315,18 +318,26 @@ h2 {
 #rightcontent{		
     width:100%;    
     text-align: center;
-    background: #2B2B2B;
-    border-radius: 5px; 
 }	
 
-#rlitwinsubcontainer {display: flex;}	
+#rlitwinsubcontainer {
+    display: flex;
+    background: #2B2B2B;    
+    border-radius: 5px; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+}	
 
 #rlitwinleft {
     float: left;
     text-align: left;
-    margin-left:1rem;
-    padding-top: 5rem;
+    padding-top: 50px;
+    margin-left:10px;
     width: 50%;
+}
+
+#rlitwinleft h2 {
+    font-size: 3rem;
 }
 
 #rlitwinleft img {
@@ -335,22 +346,19 @@ h2 {
 }
 
 #rlitwinleft p {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 #rlitwinright {   
     text-align: left;
     width:45%;
-    padding-top: 4rem;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 #rlitwinbottom {
     text-align: left;   
     margin-top: 2rem;
 }
-
-#rlitwinbottom p {padding-top: 1rem;}	
 
 @media (min-width: 1280px) {
     #rlitwinright {
@@ -387,8 +395,12 @@ h2 {
 }
 
 #jlitwin {
-    margin-top: 10rem;
+    margin-top: 5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width:100%;
+    background: #2B2B2B;    
+    border-radius: 5px; 
 }
 
 #jlitwinsubcontainer {display: flex;}
@@ -401,6 +413,10 @@ h2 {
     width:45%;
 }	
 
+#jlitwinleft h2 {
+    font-size: 3rem;
+}
+
 #jlitwinsubcontainer img {
     width: 100%;
     height: auto;
@@ -410,14 +426,14 @@ h2 {
     text-align: left; 
     margin-left:1rem; 
     margin-top: 0.5rem; 
-    font-size: 1.3rem;
+    font-size: 2rem;
 }	
 
 #jlitwinright {
     text-align: left; 
     width:40%; 
     padding-top: 10rem;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width:1040px) {
@@ -456,10 +472,13 @@ h2 {
 }
 
 #susubcontainer {
-    margin-top: 10rem;
+    margin-top: 5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
-    margin-bottom: 1rem;
     display: flex;
+    background: #2B2B2B;    
+    border-radius: 5px; 
 }
 
 #suleft {
@@ -469,6 +488,10 @@ h2 {
     padding-top: 2rem; 
     width:40%;
 }	
+
+#suleft h2 {
+    font-size: 3rem;
+}
 
 #suleft img {
     height: auto;
@@ -480,7 +503,7 @@ h2 {
     margin-left:1px; 
     width:40%; 
     padding-top: 8rem; 
-    font-size: 1.6rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width:1040px) {
@@ -522,54 +545,6 @@ h2 {
 /*Right Side End */
 /*Body & Nav End-*/
 
-/*Lightbox Start  Reference: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/  */
-
-.litebox {
-    clear: none;
-    padding-bottom: 5px;
-}
-
-.litebox a {
-    display: block;
-    text-decoration: none;
-}
-
-.litebox a:hover {
-    position: relative;
-}
-
-.litebox span img {
-    border: 1px Transparent #000;
-    margin-bottom: 1px;
-}
-
-.litebox a span {
-    position: absolute;
-    display: none;
-    color: #FFF;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    background-color: #E1DF54;
-    border: 3px solid #E1DF54;
-    font-weight: 700;
-    padding: 0.5px 0.5px 0.5px 0.5px;
-    width: 250px;
-    height: 238px;
-}
-
-.litebox img {
-    border: 0 Transparent Red;
-    border-width: 2px;
-}
-
-.litebox a:hover span {
-    display: block;
-    top: 1px;
-    right: 150px;
-    left: 100px;
-    z-index: 100;
-}
 
 #bottomContainer {
     display: flex;
@@ -587,7 +562,7 @@ h2 {
     display: flex;
     width: 80%;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width: 640px) {
@@ -647,7 +622,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width: 640px) {
@@ -664,30 +639,3 @@ h2 {
         flex-basis: 280px;
     }
 }
-/*Lightbox End*/
-
-/*Footer Start
-#footer{ 
-		-moz-box-shadow: inset 0 -2px 3px #480508;
-		-khtml-box-shadow: inset 0 -2px 3px #480508;
-		-webkit-box-shadow: inset 0 -2px 3px #480508;
-		box-shadow: inset 0 -2px 3px #480508;
-		padding-top:2px;
-		border-top: 1px solid #fffffb;
-		border-bottom: 1px solid #c9c9c0;
-		background: url(images/bck_footer.png);
-		width: 100%; 
-		min-width:890px;
-		margin: auto; 
-		/*border: 1px solid Blue; 
-		display: block;
-		text-align: center;
-		overflow: hidden;
-		/*margin-top: 50px;
-		}
-		
-#footer p {
-    text-align: center;
-    color: #b6b6ab;
-}
-Footer*/
