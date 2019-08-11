@@ -97,7 +97,7 @@ h2 {
 @media (max-width: 900px){
     #leftbar {
         position: relative;
-        width: 100%;
+        width: 90%;
     }
 
     #leftcontainer {
@@ -174,11 +174,11 @@ h2 {
 @media (max-width: 640px) {
     #indigo {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     #indigo a {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -204,8 +204,8 @@ h2 {
     display: block;
     width:100%; 
     text-align: center;        
-    padding-top: 1rem;
-    padding-bottom: 2.8rem; 
+    padding-top: 50px;
+    padding-bottom: 28px; 
 }
 
 @media (max-width: 640px) {
@@ -294,7 +294,7 @@ padding-top: 10px;
 
 @media (max-width: 900px) {
     #rightbar {
-        width: 100%;
+        width: 90%;
     }
 }
 

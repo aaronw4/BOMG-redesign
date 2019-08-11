@@ -70,8 +70,7 @@ h2 {
     width:25%;
     height: 100%;        
     position: sticky;
-    top: 0;
-        
+    top: 0;        
 }
 
 #leftcontainer {
@@ -126,8 +125,6 @@ h2 {
         display: none;
     }
 }
-
-#google_translate_element {margin-left:10px;}	
 
 #indigo {
     display: flex;
@@ -195,13 +192,18 @@ h2 {
 /*Left Side End-*/
 
 /*Right Side Start*/
-/*Heading Start*/
-
 #rightbar {
     width:75%;
     height: auto;
 }
 
+@media (max-width: 900px) {
+    #rightbar {
+        width: 100%;
+    }
+}
+
+/*Heading Start*/
 #header{
     background:  #2B2B2B;
     box-shadow: inset 0 -2px 3px #480508;
@@ -290,13 +292,6 @@ padding-top: 10px;
     font-size: 1.8rem;
     }
 }
-
-@media (max-width: 900px) {
-    #rightbar {
-        width: 100%;
-    }
-}
-
 /*Heading End*/
 
 /*Main Body Start*/
@@ -363,7 +358,7 @@ padding-top: 10px;
         width: 80%;
     }
 }
-
+/*Right Side End*/
 /*Main Body End*/
 
 /*Bottom Section Start*/
