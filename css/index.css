@@ -125,7 +125,7 @@ h2 {
     }
 }
 
-#indigo {
+nav {
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -137,7 +137,7 @@ h2 {
     padding-bottom: 13px;    
 }
 
-#indigo a {
+nav a {
     color: #000;
     width: 95%;    
     padding: 25px 0;
@@ -152,7 +152,7 @@ h2 {
 }
 
 @media (max-width: 900px) {
-    #indigo {
+    nav {
         flex-direction: row;
         width: 87%;
         margin: 0;
@@ -160,7 +160,7 @@ h2 {
         justify-content: flex-end;
     }
 
-    #indigo a {
+    nav a {
         flex-basis: 23%;
         margin: 0;
         padding: 0;
@@ -168,24 +168,24 @@ h2 {
 }
 
 @media (max-width: 640px) {
-    #indigo {
+    nav {
         flex-direction: column;
         width: 100%;
         font-size: 2.2rem;
     }
 
-    #indigo a {
+    nav a {
         width: 100%;
     }
 }
 
-#indigo .active {    
+nav .active {    
     background-color: black;
     color: #4479BA !important;
     border: solid 1px #203E5F;
 }
 
-#indigo a:hover {
+nav a:hover {
     font-size: 1.6rem;
     background: #4f1d1e;
     color: #f6f6ee;
@@ -220,12 +220,12 @@ h2 {
 #header {
     padding-top: 5rem;
     padding-bottom: 0.5rem;
-    font-siz: 3rem;
+    font-size: 3rem;
 }
 }
 
 #header p{
-font-sie: 3.5rem;
+font-size: 3.5rem;
 padding-top: 10px;
 }
 
