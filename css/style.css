@@ -9,9 +9,6 @@
     --Box-Shadow-Color: #480508;
 }
 
-
-/* CSS Document */
-/*  Reset for some default browser CSS - General */
 html,
 body {
     color: #FFF;
@@ -22,8 +19,8 @@ body {
     font-family: Arial, san-serif;
     background-color: var(--Main-BG-Color);
     max-width: 100%;
-    margin: 0, auto;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 body,
@@ -38,9 +35,9 @@ section,
 aside,
 footer,
 button {
+    border: 0;
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
 ul,
@@ -70,7 +67,6 @@ h2 {
     line-height: 2.8rem;
 }
 
-/*Body*/
 #mainbody {
     display: flex;
     align-items: flex-start;
@@ -80,14 +76,11 @@ h2 {
     border-bottom: 1px solid #fffffb;
 }
 
-
-
 #mainbody section {
     border-radius: 5px;
     height: auto;
 }
 
-/*Left Side Start*/
 #leftbar {
     width: 25%;
     height: 100%;
@@ -107,14 +100,12 @@ h2 {
 #leftcontainer a img {
     width: 90%;
     height: auto;
-    border: 0.5rem solid var(--Div-BG-Color);
-    border-bottom: 0.8rem solid var(--Div-BG-Color);
+    border: .5rem solid var(--Div-BG-Color);
+    border-bottom: .8rem solid var(--Div-BG-Color);
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 15px;
 }
-
-
 
 nav {
     display: flex;
@@ -131,7 +122,6 @@ nav {
 nav a {
     color: #000;
     width: 95%;
-    padding: 25px 0;
     margin-bottom: 15px;
     text-align: center;
     background: var(--Btn-Color);
@@ -140,8 +130,8 @@ nav a {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     user-select: none;
     transition: font-size .3s ease, background-color .3s ease;
+    padding: 25px 0;
 }
-
 
 nav .active {
     background-color: var(--Btn-Color-Active);
@@ -155,17 +145,11 @@ nav a:hover {
     color: #f6f6ee;
 }
 
-/*Left Side End-*/
-
-/*Right Side Start*/
 #rightbar {
     width: 75%;
     height: auto;
 }
 
-
-
-/*Heading Start*/
 #header {
     background: var(--Div-BG-Color);
     box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
@@ -194,14 +178,11 @@ nav a:hover {
 
 #subheading2 {
     color: red;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 3rem;
     padding-top: 10px;
 }
 
-/*Heading End*/
-
-/*Main Body Start*/
 #rightcontent {
     width: 100%;
     text-align: left;
@@ -226,7 +207,7 @@ nav a:hover {
     padding-bottom: 25px;
     background: var(--Div-BG-Color);
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
 .extLinkContainer {
@@ -250,18 +231,19 @@ nav a:hover {
 
 .extLink p {
     font-size: 2.5rem;
-    padding: 0;
     background: var(--Div-BG-Color);
     text-align: center;
+    padding: 0;
 }
 
 #topbar {
+    font-size: 2rem;
     width: 100%;
     text-align: center;
     background: #2B2B2B;
     border-radius: 5px;
-    padding: 2rem 0;
-    font-size: 2rem;
+    margin-bottom: 5px;
+    padding: 50px 0;
 }
 
 #pagetitle {
@@ -270,19 +252,20 @@ nav a:hover {
     font-size: 4rem;
     font-weight: 400;
     color: #FFF;
+    position: relative;
     text-align: center;
 }
 
 #insurance {
     background: #2B2B2B;
     padding-top: 50px;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     width: 100%;
 }
 
 #insurance h2 {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 3.5rem;
 }
 
@@ -290,16 +273,14 @@ nav a:hover {
     font-size: 2.5rem;
     padding-top: 5rem;
     padding-left: 35%;
-    ;
 }
 
 #forms {
     background: #2B2B2B;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     width: 100%;
-
 }
 
 #forms h2 {
@@ -322,7 +303,7 @@ nav a:hover {
 
 .container {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     background: #2B2B2B;
     border-radius: 5px;
 }
@@ -346,22 +327,15 @@ nav a:hover {
 .boxRight {
     width: 60%;
     font-size: 2.5rem;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding: 1rem 5% 2rem;
 }
 
-/*Right Side End */
-/*Body & Nav End-*/
-
-/*Bottom Section Start*/
 #bottomContainer {
     display: flex;
-    margin: 50px 0;
     padding-bottom: 50px;
     box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
     border-bottom: 1px solid #fffffb;
+    margin: 50px 0;
 }
 
 #siteLockCont {
@@ -376,20 +350,19 @@ nav a:hover {
 }
 
 .fa-facebook {
-    color: white;
-    background-color: royalblue;
+    color: #FFF;
+    background-color: #4169E1;
+    border-radius: .5rem;
+    margin: 1rem 1rem 1rem 0;
     padding: 1rem 1.4rem;
-    margin: 1rem;
-    margin-left: 0rem;
-    border-radius: 0.5rem;
 }
 
 .fa-yelp {
-    color: white;
-    background-color: orangered;
-    padding: 1rem 1.2rem;
+    color: #FFF;
+    background-color: #FF4500;
+    border-radius: .5rem;
     margin: 1rem;
-    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
 }
 
 #bottomFooter {
@@ -407,32 +380,8 @@ nav a:hover {
     font-size: 1.6rem;
 }
 
-/*Bottom Section End*/
-/*Body End*/
-
-
-
-#topbar {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background: #2B2B2B;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
 #topbar span {
     font-size: 2.5rem;
-}
-
-#pagetitle {
-    text-shadow: 3px 3px 3px #2c0306;
-    text-transform: capitalize;
-    font-size: 4rem;
-    font-weight: 400;
-    color: #FFF;
-    position: relative;
-    text-align: center;
 }
 
 #rlitwinsubcontainer {
@@ -451,15 +400,6 @@ nav a:hover {
     width: 50%;
 }
 
-#rlitwinleft h2 {
-    font-size: 3rem;
-}
-
-#rlitwinleft img {
-    height: auto;
-    width: 95%;
-}
-
 #rlitwinleft p {
     font-size: 2rem;
 }
@@ -468,11 +408,6 @@ nav a:hover {
     text-align: left;
     width: 45%;
     font-size: 2.2rem;
-}
-
-#rlitwinright h5 {
-    margin: 0;
-    font-size: 2.5rem;
 }
 
 #rlitwinright p {
@@ -505,10 +440,6 @@ nav a:hover {
     width: 45%;
 }
 
-#jlitwinleft h2 {
-    font-size: 3rem;
-}
-
 #jlitwinsubcontainer img {
     width: 95%;
     height: auto;
@@ -517,7 +448,7 @@ nav a:hover {
 #jlitwinleft p {
     text-align: left;
     margin-left: 1rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     font-size: 2rem;
 }
 
@@ -526,15 +457,6 @@ nav a:hover {
     width: 45%;
     padding-top: 50px;
     font-size: 2.2rem;
-}
-
-#jlitwinright h5 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-#jlitwinright p {
-    line-height: 3rem;
 }
 
 #susubcontainer {
@@ -555,15 +477,6 @@ nav a:hover {
     width: 40%;
 }
 
-#suleft h2 {
-    font-size: 3rem;
-}
-
-#suleft img {
-    height: auto;
-    width: 95%
-}
-
 #suright {
     text-align: left;
     margin-left: 1px;
@@ -572,22 +485,9 @@ nav a:hover {
     font-size: 2.2rem;
 }
 
-#suright h5 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-#suright p {
-    line-height: 3rem;
-}
-
-
-
-
-/*Lightbox Start  Reference: http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/  */
 .litebox {
     clear: none;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .litebox a {
@@ -600,7 +500,6 @@ nav a:hover {
 }
 
 .litebox span img {
-    border: 1px Transparent #000;
     margin-bottom: 1px;
     height: auto;
     width: 80rem;
@@ -611,7 +510,7 @@ nav a:hover {
 .litebox a span {
     position: absolute;
     display: none;
-    padding: 0.5px 0.5px 0.5px 0.5px;
+    padding: .5px;
 }
 
 .litebox img {
@@ -628,8 +527,6 @@ nav a:hover {
     left: 100px;
     z-index: 100;
 }
-
-/*Lightbox End*/
 
 .nolitebox img {
     -webkit-filter: grayscale(110%);
@@ -693,7 +590,6 @@ nav a:hover {
     text-shadow: 1px 1px 1px #000;
     text-transform: capitalize;
     font-size: 4rem;
-    ;
     font-weight: 400;
     color: #FFF;
     padding-top: 30px;
@@ -709,7 +605,7 @@ nav a:hover {
 #publicTransit {
     font-size: 2.5rem;
     color: #FFF;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     background: #2B2B2B;
     border-radius: 5px;
     padding-bottom: 50px;
@@ -746,20 +642,43 @@ nav a:hover {
     color: #FFF;
 }
 
-
 #transitOptions {
     display: flex;
     width: 100%;
 }
 
-/*----------------------------------------------Media-Queries----------------------------------------------*/
-@media (max-width: 500px) {
-    #insuranceInfo {
-        padding-left: 5%;
-    }
+#rlitwinleft h2,
+#jlitwinleft h2,
+#suleft h2 {
+    font-size: 3rem;
 }
 
+#rlitwinleft img,
+#suleft img {
+    height: auto;
+    width: 95%;
+}
+
+#rlitwinright h5,
+#jlitwinright h5,
+#suright h5 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#jlitwinright p,
+#suright p {
+    line-height: 3rem;
+}
+
+/*----------------------------------------------Media-Queries----------------------------------------------*/
+
 @media (max-width: 640px) {
+    #insuranceInfo {
+        padding-left: 20%;
+        font-size: 2rem;
+    }
+
     .extLinkContainer {
         flex-direction: column;
         align-items: center;
@@ -769,18 +688,6 @@ nav a:hover {
         width: 80%;
     }
 
-    #insuranceInfo {
-        padding-left: 20%;
-        font-size: 2rem;
-    }
-
-    #insurance h2 {
-        font-size: 2.5rem;
-    }
-    #pagetitle {
-        font-size: 3rem;
-    }
-
     #transitOptions {
         flex-direction: column;
         width: 90%;
@@ -788,27 +695,9 @@ nav a:hover {
         padding-left: 2%;
     }
 
-    #pagetitle2 {
-        font-size: 3rem;
-    }
-
-    #publicTransit {
-        font-size: 2rem;
-    }
-
-    #acTransit {
-        width: 100%;
-        padding: 0;
-    }
-
-    #bart {
-        width: 100%;
-        padding: 0;
-    }
-
     #leftcontainer a {
-        margin: 0;
         width: 0;
+        margin: 0;
     }
 
     #leftcontainer a img {
@@ -831,117 +720,29 @@ nav a:hover {
         padding-bottom: 5rem;
     }
 
-    #suleft {
-        float: none;
-        width: 90%;
-    }
-
-    #suleft h2 {
-        font-size: 2.8rem;
-    }
-
-    #suleft p {
-        font-size: 1.6rem;
-    }
-
-    #suright {
-        width: 90%;
-        padding-top: 40px;
+    #listtitle2 {
+        font-size: 2rem;
         padding-left: 10px;
     }
 
-    #suright h5 {
-        margin: 0px;
-        font-size: 2rem;
-    }
-
-    #suright p {
-        font-size: 1.8rem;
-    }
- 
-        #parkingTitle {
-            font-size: 3rem;
-        }
-    
-        #listtitle2 {
-            font-size: 2rem;
-            padding-left: 10px;
-        }
-
-        #header {
-            padding-top: 2rem;
-            padding-bottom: 0.5rem;
-            font-size: 3rem;
-        }
-    
-        #header p {
-            font-size: 2rem;
-        }
-    
-        #heading {
-            font-size: 2.5rem;
-        }
-
-    #pagetitle1 {
+    #header {
+        padding-top: 2rem;
+        padding-bottom: .5rem;
         font-size: 3rem;
-    }
-
-    #directions {
-        font-size: 2.5rem;
-    }
-
-    #listtitle1 {
-        font-size: 2rem
     }
 
     #jlitwin {
-            padding-top: 20px;
-        }
-    
-        #jlitwinsubcontainer {
-            flex-direction: column;
-            padding-top: 0;
-        }
-    
-        #jlitwinleft {
-            float: none;
-            width: 90%;
-        }
-    
-        #jlitwinleft h2 {
-            font-size: 2.8rem;
-        }
-    
-        #jlitwinleft p {
-            font-size: 1.6rem;
-        }
-    
-        #jlitwinright {
-            width: 90%;
-            padding-top: 40px;
-            padding-left: 10px;
-        }
-    
-        #jlitwinright h5 {
-            margin: 0px;
-            font-size: 2rem;
-        }
-    
-        #jlitwinright p {
-            font-size: 1.8rem;
-        }
+        padding-top: 20px;
+    }
 
-    #pagetitle {
-        font-size: 3rem;
+    #jlitwinsubcontainer {
+        flex-direction: column;
+        padding-top: 0;
     }
 
     #formsLinks {
         padding-left: 5%;
         font-size: 2rem;
-    }
-
-    #forms h2 {
-        font-size: 2.5rem;
     }
 
     .box {
@@ -951,10 +752,6 @@ nav a:hover {
     .boxLeft {
         padding-top: 20px;
         width: 90%;
-    }
-
-    .boxLeft p {
-        font-size: 1.8rem;
     }
 
     .boxRight {
@@ -975,16 +772,6 @@ nav a:hover {
         padding-left: 10%;
     }
 
-    #links {
-        padding-bottom: 5rem;
-        font-size: 2rem;
-    }
-
-    #Connect {
-        padding-bottom: 5rem;
-        font-size: 2rem;
-    }
-
     #sitelock {
         padding-left: 50%;
     }
@@ -996,8 +783,8 @@ nav a:hover {
     #footerButtons {
         font-size: 2rem;
         justify-content: space-around;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
     #footerButtons a {
@@ -1016,28 +803,85 @@ nav a:hover {
         padding-top: 0;
     }
 
-    #rlitwinleft h2 {
-        font-size: 2.8rem;
-    }
-
-    #rlitwinleft p {
-        font-size: 1.6rem;
-    }
-
     #rlitwinright {
         padding-top: 40px;
         padding-left: 10px;
         width: 95%;
     }
 
-    #rlitwinright h5 {
-        margin: 0px;
-        font-size: 2rem;
-    }
-
     #rlitwinright p {
         font-size: 1.8rem;
         padding-top: 10px;
+    }
+
+    #insurance h2,
+    #heading,
+    #directions,
+    #forms h2 {
+        font-size: 2.5rem;
+    }
+
+    #pagetitle,
+    #pagetitle2,
+    #parkingTitle,
+    #pagetitle1 {
+        font-size: 3rem;
+    }
+
+    #publicTransit,
+    #header p,
+    #listtitle1 {
+        font-size: 2rem;
+    }
+
+    #acTransit,
+    #bart {
+        width: 100%;
+        padding: 0;
+    }
+
+    #suleft,
+    #jlitwinleft {
+        float: none;
+        width: 90%;
+    }
+
+    #suleft h2,
+    #jlitwinleft h2,
+    #rlitwinleft h2 {
+        font-size: 2.8rem;
+    }
+
+    #suleft p,
+    #jlitwinleft p,
+    #rlitwinleft p {
+        font-size: 1.6rem;
+    }
+
+    #suright,
+    #jlitwinright {
+        width: 90%;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    #suright h5,
+    #jlitwinright h5,
+    #rlitwinright h5 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    #suright p,
+    #jlitwinright p,
+    .boxLeft p {
+        font-size: 1.8rem;
+    }
+
+    #links,
+    #Connect {
+        padding-bottom: 5rem;
+        font-size: 2rem;
     }
 }
 
@@ -1064,20 +908,20 @@ nav a:hover {
 
     #leftcontainer a {
         width: 11%;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     #leftcontainer a img {
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
     nav {
         flex-direction: row;
         width: 87%;
+        justify-content: flex-end;
         margin: 0;
         padding: 0 10px;
-        justify-content: flex-end;
     }
 
     nav a {
@@ -1117,12 +961,9 @@ nav a:hover {
         padding-right: 5px;
     }
 
-    #jlitwinright {
-        padding-top: 0px;
-    }
-
+    #jlitwinright,
     #suright {
-        padding-top: 0;
+        padding-top: 0px;
     }
 }
 
