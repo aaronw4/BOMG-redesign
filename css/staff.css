@@ -105,7 +105,7 @@ h2 {
 
     #leftcontainer a {
         width: 11%;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
     #leftcontainer a img {
@@ -164,6 +164,7 @@ h2 {
     #indigo a {
         flex-basis: 23%;
         margin: 0;
+        padding: 0;
     }
 }
 
@@ -171,6 +172,7 @@ h2 {
     #indigo {
         flex-direction: column;
         width: 100%;
+        font-size: 2.2rem;
     }
 
     #indigo a {
@@ -264,13 +266,13 @@ text-align: center;
 
 @media (max-width: 1000px) {
 #heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 }
 
 @media (max-width: 640px) {
 #heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 }
 
@@ -324,11 +326,17 @@ padding-top: 10px;
     text-align: center;	
 }
 
+@media (max-width: 640px) {
+    #pagetitle {
+        font-size: 3rem;
+    }
+}
+
 #rlitwinsubcontainer {
     display: flex;
     background: #2B2B2B;    
     border-radius: 5px; 
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }	
 
@@ -359,6 +367,15 @@ padding-top: 10px;
     font-size: 2.2rem;
 }
 
+#rlitwinright h5 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#rlitwinright p {
+    padding-top: 10px;
+}
+
 #rlitwinbottom {
     text-align: left;   
     margin-top: 2rem;
@@ -366,24 +383,24 @@ padding-top: 10px;
 
 @media (min-width: 1280px) {
     #rlitwinright {
-        padding-top: 8rem;
-   
+        padding-top: 8rem;   
     }
 }
 
 @media (max-width: 640px) {
     #rlitwinsubcontainer {
         flex-direction: column;
-        padding-top: 5rem;
+        padding-top: 50px;
     }
 
     #rlitwinleft {
         float: none;
         width:90%;
+        padding-top: 0;
     }
 
     #rlitwinleft h2 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     #rlitwinleft p {
@@ -391,11 +408,19 @@ padding-top: 10px;
     }
 
     #rlitwinright {
-        width: 90%;
+        padding-top: 40px;
+        padding-left: 10px;
+        width: 95%;
+    }
+
+    #rlitwinright h5 {
+        margin: 0px;
+        font-size: 2rem;
     }
 
     #rlitwinright p {
         font-size: 1.8rem;
+        padding-top: 10px;
     }
 }
 
@@ -423,7 +448,7 @@ padding-top: 10px;
 }
 
 #jlitwinsubcontainer img {
-    width: 100%;
+    width: 95%;
     height: auto;
 }
 
@@ -436,21 +461,38 @@ padding-top: 10px;
 
 #jlitwinright {
     text-align: left; 
-    width:40%; 
-    padding-top: 10rem;
+    width:45%; 
+    padding-top: 50px;
+    font-size: 2.2rem;
+}
+
+#jlitwinright h5 {
+    margin: 0;
     font-size: 2.5rem;
 }
 
+#jlitwinright p {
+    line-height: 3rem;
+}
+
 @media (max-width:1040px) {
+    #jlitwinleft p {
+        padding-right: 5px;
+    }
+
     #jlitwinright {
-        padding-top: 8rem;
+        padding-top: 0px;
     }
 }
 
 @media (max-width: 640px) {
+    #jlitwin {
+        padding-top: 20px;
+    }
+
     #jlitwinsubcontainer {
         flex-direction: column;
-        padding-top: 10rem;
+        padding-top: 0;
     }
 
     #jlitwinleft {
@@ -459,7 +501,7 @@ padding-top: 10px;
     }
 
     #jlitwinleft h2 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     #jlitwinleft p {
@@ -468,7 +510,13 @@ padding-top: 10px;
 
     #jlitwinright {
         width: 90%;
-        padding-top: 4rem;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    #jlitwinright h5 {
+        margin: 0px;
+        font-size: 2rem;
     }
 
     #jlitwinright p {
@@ -500,27 +548,36 @@ padding-top: 10px;
 
 #suleft img {
     height: auto;
-    width: 100%
+    width: 95%
 }
 
 #suright {
     text-align: left; 
     margin-left:1px; 
-    width:40%; 
-    padding-top: 8rem; 
+    width:45%; 
+    padding-top: 50px; 
+    font-size: 2.2rem;
+}
+
+#suright h5 {
+    margin: 0;
     font-size: 2.5rem;
+}
+
+#suright p {
+    line-height: 3rem;
 }
 
 @media (max-width:1040px) {
     #suright {
-        padding-top: 4rem;
+        padding-top: 0;
     }
 }
 
 @media (max-width: 640px) {
     #susubcontainer {
         flex-direction: column;
-        padding-top: 10rem;
+        padding-top: 20px;
         padding-bottom: 5rem;
     }
 
@@ -530,7 +587,7 @@ padding-top: 10px;
     }
 
     #suleft h2 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     #suleft p {
@@ -539,7 +596,13 @@ padding-top: 10px;
 
     #suright {
         width: 90%;
-        padding-top: 4rem;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    #suright h5 {
+        margin: 0px;
+        font-size: 2rem;
     }
 
     #suright p {
@@ -629,6 +692,19 @@ padding-top: 10px;
     font-size: 2.5rem;
 }
 
+@media (max-width:900px) {
+    #footerButtons {
+        justify-content: flex-start;
+        padding-left: 10%;
+        width: 90%;
+    }
+
+    #footerButtons a {
+        flex-basis: 350px;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 640px) {
     #bottomFooter {
         margin-top: 0;
@@ -636,6 +712,9 @@ padding-top: 10px;
 
     #footerButtons {
         font-size: 2rem;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
     }
 
     #footerButtons a {

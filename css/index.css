@@ -105,13 +105,12 @@ h2 {
 
     #leftcontainer a {
         width: 11%;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
     #leftcontainer a img {
         padding: 0;
-        margin: 0;
-        
+        margin: 0;        
     }
 }
 
@@ -164,6 +163,7 @@ h2 {
     #indigo a {
         flex-basis: 23%;
         margin: 0;
+        padding: 0;
     }
 }
 
@@ -171,6 +171,7 @@ h2 {
     #indigo {
         flex-direction: column;
         width: 100%;
+        font-size: 2.2rem;
     }
 
     #indigo a {
@@ -212,18 +213,19 @@ h2 {
     width:100%; 
     text-align: center;        
     padding-top: 50px;
-    padding-bottom: 2.8rem; 
+    padding-bottom: 28px; 
 }
 
 @media (max-width: 640px) {
 #header {
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 0.5rem;
+    font-siz: 3rem;
 }
 }
 
 #header p{
-font-size: 3.5rem;
+font-sie: 3.5rem;
 padding-top: 10px;
 }
 
@@ -264,13 +266,13 @@ text-align: center;
 
 @media (max-width: 1000px) {
 #heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     }
 }
 
 @media (max-width: 640px) {
 #heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     }
 }
 
@@ -441,6 +443,19 @@ padding-top: 10px;
     font-size: 2.5rem;
 }
 
+@media (max-width:900px) {
+    #footerButtons {
+        justify-content: flex-start;
+        padding-left: 10%;
+        width: 90%;
+    }
+
+    #footerButtons a {
+        flex-basis: 350px;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 640px) {
     #bottomFooter {
         margin-top: 0;
@@ -448,6 +463,9 @@ padding-top: 10px;
 
     #footerButtons {
         font-size: 2rem;  
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
     }
 
     #footerButtons a {

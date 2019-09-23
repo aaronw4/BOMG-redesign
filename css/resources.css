@@ -40,8 +40,8 @@ h1,h2,h3 {
 }
 
 h2 {
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 1.8rem;
+	line-height: 2.8rem;
 }
 
 /*Body*/
@@ -62,7 +62,6 @@ h2 {
 
 #mainbody section{
     border-radius: 5px; 
-	display: inline-block; 
 	height: auto;
 }
 
@@ -71,8 +70,7 @@ h2 {
     width:25%;
     height: 100%;        
     position: sticky;
-    top: 0;
-        
+    top: 0;        
 }
 
 #leftcontainer {
@@ -97,7 +95,7 @@ h2 {
 @media (max-width: 900px){
     #leftbar {
         position: relative;
-        width: 90%;
+        width: 100%;
     }
 
     #leftcontainer {
@@ -107,13 +105,12 @@ h2 {
 
     #leftcontainer a {
         width: 11%;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
     #leftcontainer a img {
         padding: 0;
-        margin: 0;
-        
+        margin: 0;        
     }
 }
 
@@ -127,8 +124,6 @@ h2 {
         display: none;
     }
 }
-
-#google_translate_element {margin-left:10px;}	
 
 #indigo {
     display: flex;
@@ -168,17 +163,19 @@ h2 {
     #indigo a {
         flex-basis: 23%;
         margin: 0;
+        padding: 0;
     }
 }
 
 @media (max-width: 640px) {
     #indigo {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        font-size: 2.2rem;
     }
 
     #indigo a {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -196,6 +193,17 @@ h2 {
 /*Left Side End-*/
 
 /*Right Side Start*/
+#rightbar {
+    width:75%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    #rightbar {
+        width: 100%;
+    }
+}
+
 /*Heading Start*/
 #header{
     background:  #2B2B2B;
@@ -257,13 +265,13 @@ text-align: center;
 
 @media (max-width: 1000px) {
 #heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 }
 
 @media (max-width: 640px) {
 #heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 }
 
@@ -287,15 +295,11 @@ padding-top: 10px;
 }
 /*Heading End*/
 
-#rightbar {
-    width:75%;
-    height: auto;
-}
-
-@media (max-width: 900px) {
-    #rightbar {
-        width: 90%;
-    }
+/*Main Body Start*/
+#rightcontent {
+	width: 100%;
+	text-align: left;
+	border-radius: 5px;
 }
 
 #topbar {
@@ -316,10 +320,10 @@ padding-top: 10px;
 	text-align: center;
 }
 
-#rightcontent {
-	width: 100%;
-	text-align: left;
-	border-radius: 5px;
+@media (max-width: 640px) {
+    #pagetitle {
+        font-size: 3rem;
+    }
 }
 
 #insurance {
@@ -349,8 +353,13 @@ padding-top: 10px;
 
 @media (max-width: 640px) {
 	#insuranceInfo {
-		padding-left: 20%;
-	}
+        padding-left: 20%;
+        font-size: 2rem;
+    }
+    
+    #insurance h2 {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -400,8 +409,13 @@ padding-top: 10px;
 
 @media (max-width: 640px) {
 	#formsLinks {
-		padding-left: 5%;
-	}
+        padding-left: 5%;
+        font-size: 2rem;
+    }
+    
+    #forms h2 {
+        font-size: 2.5rem;
+    }
 }
 /*Right Side End */
 
@@ -485,6 +499,19 @@ padding-top: 10px;
     font-size: 2.5rem;
 }
 
+@media (max-width:900px) {
+    #footerButtons {
+        justify-content: flex-start;
+        padding-left: 10%;
+        width: 90%;
+    }
+
+    #footerButtons a {
+        flex-basis: 350px;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 640px) {
     #bottomFooter {
         margin-top: 0;
@@ -492,6 +519,9 @@ padding-top: 10px;
 
     #footerButtons {
         font-size: 2rem;  
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
     }
 
     #footerButtons a {
