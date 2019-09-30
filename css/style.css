@@ -156,6 +156,8 @@ nav a:hover {
     height: auto;
 }
 
+/*------------------------------------------------Header----------------------------------------------*/
+
 header {
     background: var(--Div-BG-Color);
     box-shadow: inset 0 -2px 3px #480508;
@@ -167,24 +169,32 @@ header {
     padding-bottom: 28px;
 }
 
-header p:nth-child(1) {
+.title1, .title2 {
     text-shadow: 3px 3px 3px var(--Shadow-Color);
     text-transform: capitalize;
-    font-size: 3rem;
     font-weight: 400;
     color: #FFF;
     position: relative;
     text-align: center;
 }
 
-header p:nth-child(2) {
+.title1 {    
+    font-size: 5rem;
+}
+
+.title2 {
+    font-size: 3rem;
+}
+
+.hours {
     font-size: 1.5rem;
     color: #FFF;
     position: relative;
     text-align: center;
+    padding-top: 10px;
 }
 
-header p:nth-child(3) {
+.closed {
     width:70%;
     margin:auto;
     font-weight: 700;
@@ -199,31 +209,7 @@ header p:nth-child(3) {
     background-color: #2196F3;
 }
 
-.pagetitle {
-    text-shadow: 3px 3px 3px var(--Shadow-Color);
-    text-transform: capitalize;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #FFF;
-    position: relative;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.pagetitle span,.pagetitle a{
-    text-shadow: none;
-    text-transform: Sentence;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #FFF;
-    position: relative;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.pagetitle a:hover{
-    color: #E1DF54;
-}
+/*------------------------------------------------Home Page----------------------------------------------*/
 
 .rightcontent {
     width: 100%;
@@ -274,6 +260,33 @@ header p:nth-child(3) {
 }
 
 /*----------------------------------------------Staff----------------------------------------------*/
+
+.pagetitle {
+    text-shadow: 3px 3px 3px var(--Shadow-Color);
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pagetitle span,.pagetitle a{
+    text-shadow: none;
+    text-transform: Sentence;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pagetitle a:hover{
+    color: #E1DF54;
+}
+
 .Profile-Container {
     display: flex;
     align-items: flex-start;
