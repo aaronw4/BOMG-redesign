@@ -553,7 +553,9 @@ iframe {
     font-size: 2.5rem;
 }
 
-#siteLockCont{padding:5rem;}
+#siteLockCont {
+    width: 20%;
+}
 
 .fa-facebook {
     color: #FFF;
@@ -573,8 +575,8 @@ iframe {
 
 footer {
     width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 #footerButtons {
@@ -583,20 +585,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.6rem;
-    margin:auto;
-    padding: 0;
+    font-size: 2rem;
 }
-
-#footerButtons a {
-    width: 20%;
-    margin:auto;
-    text-align: center;
-    line-height: 4rem;
-    flex-basis: 20%;
-}
-
-
 
 /*----------------------------------------------Media-Queries----------------------------------------------*/
 
@@ -651,25 +641,6 @@ footer {
         padding-left: 10px;
     }
 
-    .box {
-        flex-direction: column;
-    }
-
-    .boxLeft {
-        padding-top: 20px;
-        width: 90%;
-    }
-
-    .boxRight {
-        padding-top: 20px;
-        width: 90%;
-        font-size: 2rem;
-    }
-
-    .boxLeft p {
-        font-size: 1.8rem;
-    }
-
     .insurance h2,
     .forms h2 {
         font-size: 1.5rem;
@@ -682,6 +653,43 @@ footer {
     #publicTransit,
     #listtitle1 {
         font-size: 3rem;
+    }
+
+    #bottomContainer {
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    #bottomSection {
+        flex-direction: column;
+        width: 90%;
+        font-size: 2.5rem;
+        padding-left: 10%;
+    }
+
+    #links, #Connect {
+        padding-bottom: 50px;
+        font-size: 2rem;
+    }
+
+    #sitelock {
+        padding-left: 50%;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    #footerButtons {
+        font-size: 2rem;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footerButtons a {
+        line-height: 4rem;
+        flex-basis: 280px;
     }
 }
 
