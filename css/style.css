@@ -264,12 +264,11 @@ header {
 .pagetitle {
     text-shadow: 3px 3px 3px var(--Shadow-Color);
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #FFF;
-    position: relative;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 50px 0;
 }
 
 .pagetitle span,.pagetitle a{
