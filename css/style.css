@@ -237,26 +237,30 @@ header {
     margin: 0;
 }
 
-.box {
+.extLinkContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    background: var(--Div-BG-Color);
+    justify-content: space-around;
 }
 
-.boxLeft {
-    width: 35%;
+.extLink {
+    width: 40%;
+    padding-bottom: 50px;
 }
 
-.boxLeft p {
-    text-align: center;
-    font-size: 2rem;
+.extLink a img {
+    height: auto;
+    width: 100%;
+    background-color: #FFF;
 }
 
-.boxRight {
-    width: 60%;
+.extLink p {
     font-size: 2.5rem;
-    padding: 1rem 5% 2rem;
+    background: var(--Div-BG-Color);
+    text-align: center;
+    padding: 0;
 }
 
 /*----------------------------------------------Staff----------------------------------------------*/
@@ -269,21 +273,6 @@ header {
     color: #FFF;
     text-align: center;
     padding: 50px 0;
-}
-
-.pagetitle span,.pagetitle a{
-    text-shadow: none;
-    text-transform: Sentence;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #FFF;
-    position: relative;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.pagetitle a:hover{
-    color: #E1DF54;
 }
 
 .Profile-Container {
@@ -394,6 +383,21 @@ header {
 }
 
 /*--------------------------------------Resources----------------------------------*/
+
+.pagetitle span,.pagetitle a{
+    text-shadow: none;
+    text-transform: Sentence;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pagetitle a:hover{
+    color: #E1DF54;
+}
 
 .content ol{
     list-style-type: decimal;
@@ -532,43 +536,24 @@ iframe {
 
 
 /*---------------------------------------Footer-&-Social-Btns---------------------------------------*/
-.extLinkContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: var(--Div-BG-Color);
-    justify-content: space-around;
-}
 
-.extLink {
-    width: 40%;
+#bottomContainer {
+    display: flex;
+    box-shadow: inset 0 -2px 3px var(--Shadow-Color);
+    border-bottom: 1px solid #fffffb;
+    margin: 50px 0;
     padding-bottom: 50px;
 }
 
-.extLink a img {
-    height: auto;
-    width: 100%;
-    background-color: #FFF;
-}
-
-.extLink p {
-    font-size: 2.5rem;
-    background: var(--Div-BG-Color);
-    text-align: center;
-    padding: 0;
-}
-
-#googleBox {
-    width: 300px;
-    height: 30px;
+#bottomSection {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:auto;
     font-size: 2.5rem;
 }
 
-#googleButton {
-    width: 150px;
-    height: 30px;
-    font-size: 2rem;
-}
+#siteLockCont{padding:5rem;}
 
 .fa-facebook {
     color: #FFF;
@@ -584,35 +569,6 @@ iframe {
     border-radius: .5rem;
     margin: 1rem;
     padding: 1rem 1.2rem;
-}
-
-#bottomContainer {
-    display: flex;
-    flex-direction: column-reverse;
-    box-shadow: inset 0 -2px 3px var(--Shadow-Color);
-    border-bottom: 1px solid #fffffb;
-    margin: 50px 0;
-    margin-bottom: 1rem;
-}
-
-#bottomSection {
-    display: flex;
-    align-items: flex-start;
-    align-content: space-evenly;
-    justify-content: space-around;
-    width: 80%;
-    margin:auto;
-    font-size: 2.5rem;
-}
-
-#siteLockCont{padding:5rem;}
-
-#links,#siteLockCont,
-#Connect {
-    top:0;
-    padding-bottom: 5rem;
-    font-size: 1.5rem;
-    margin:15px;
 }
 
 footer {
