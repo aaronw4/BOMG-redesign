@@ -430,6 +430,31 @@ header {
 
 /*---------------------------Common-Conditions-lightbox---------------------------*/
 
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;	
+}
+
+.boxLeft {
+	width: 35%;		
+}
+
+.boxLeft p{
+	text-align: center;
+	font-size: 2rem;
+}
+
+.boxRight {
+	width: 60%;
+	font-size: 2.5rem;
+    padding-right: 5%;
+    padding-left: 5%;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
 .litebox {
     clear: none;
     padding-bottom: .5rem;
@@ -655,6 +680,25 @@ footer {
         font-size: 3rem;
     }
 
+    .box {
+        flex-direction: column;
+    }
+
+    .boxLeft {
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    .boxLeft p {
+        font-size: 1.8rem;
+    }
+
+    .boxRight{
+        padding-top: 20px;
+        width: 90%;
+        font-size: 2rem;
+    }
+    
     #bottomContainer {
         flex-direction: column-reverse;
         margin-bottom: 10px;
