@@ -281,10 +281,10 @@ header {
     align-content: space-evenly;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: .5em;
+    font-size: .5rem;
     max-height: 400px;
-    margin-left: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .Doc-Profile {
@@ -293,31 +293,12 @@ header {
     width: 300px;
     height: 400px;
     perspective: 1000px;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
-.Profile-Caption {
-    position: absolute;
-    bottom: 0;
-    left: 0rem;
-    text-align: left;
-    font-size:3.5em;
-    color: #FFF;
-    width: 100%;
-    background-color: var(--Btn-Color);
-}
-
-.Profile-Caption h4{
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin: 0 1rem;
-}
-
-.Profile-Caption p{
-    font-size: 1.2rem;
-    padding-bottom: .8rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.Doc-Profile:hover .Profile-Card {
+    transform: rotateY(180deg);
+    box-shadow: 0 1px 2px 2px #bbb ;
 }
 
 .Doc-Profile img {
@@ -336,11 +317,6 @@ header {
     margin:.5rem;
 }
 
-.Doc-Profile:hover .Profile-Card {
-    transform: rotateY(180deg);
-    box-shadow: 0 1px 2px 2px #bbb ;
-}
-
 .Profile-Card-Front,
 .Profile-Card-Back {
     position: absolute;
@@ -352,6 +328,30 @@ header {
 .Profile-Card-Front {
     background-color: var(--Main-BG-Color,transparent);
     color: black;
+}
+
+.Profile-Caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    font-size:3.5em;
+    color: #FFF;
+    width: 100%;
+    background-color: var(--Btn-Color);
+}
+
+.Profile-Caption h4{
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.Profile-Caption p{
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Profile-Card-Back {
