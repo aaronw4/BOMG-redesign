@@ -143,7 +143,6 @@ nav .active {
 }
 
 nav a:hover {
-    font-size: 1.6rem;
     background: var(--Btn-Color-Hover);
     color: #f6f6ee;
 }
