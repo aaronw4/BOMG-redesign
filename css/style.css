@@ -277,12 +277,8 @@ header {
 
 .Profile-Container {
     display: flex;
-    align-items: flex-start;
-    align-content: space-evenly;
-    justify-content: space-around;
     flex-wrap: wrap;
     font-size: .5rem;
-    max-height: 400px;
     margin-bottom: 20px;
     margin-right: 5px;
 }
@@ -563,7 +559,6 @@ iframe {
 /*---------------------------------------Footer-&-Social-Btns---------------------------------------*/
 
 #bottomContainer {
-    display: flex;
     box-shadow: inset 0 -2px 3px var(--Shadow-Color);
     border-bottom: 1px solid #fffffb;
     margin: 50px 0;
@@ -573,7 +568,6 @@ iframe {
 #bottomSection {
     display: flex;
     justify-content: space-around;
-    width: 80%;
     margin:auto;
     font-size: 2.5rem;
 }
@@ -627,6 +621,7 @@ footer {
 
     nav {
         flex-direction: column;
+        flex-wrap: wrap;
         min-width: 100%;
         font-size: 2.2rem;
     }
@@ -712,12 +707,9 @@ footer {
     }
 
     #links, #Connect {
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-size: 2rem;
-    }
-
-    #sitelock {
-        padding-left: 50%;
     }
 
     footer {
@@ -752,42 +744,37 @@ footer {
         flex-direction: row;
     }
 
-    #leftcontainer a {
-        width: 11%;
-        margin-left: 0;
+    #leftcontainer nav {
+        width: 20%;
     }
 
     #leftcontainer a img {
-        margin: 0;
-        padding: 0;
+        display: none;
     }
 
     nav {
         flex-direction: row;
-        width: 87%;
-        margin: 0;
-        padding: 0 10px;
-        justify-content: flex-end;
     }
 
-    nav a {
-        flex-basis: 23%;
-        margin: 0;
-        padding: 0;
+    header {
+        padding-top: 10px;
     }
 
     #rightbar {
         width: 100%;
     }
-   
-    #footerButtons {
-        justify-content: flex-start;
-        padding-left: 10%;
-        width: 90%;
+
+    .title1 {
+        font-size: 4rem;
     }
 
-    #footerButtons a {
-        flex-basis: 350px;
-        padding-bottom: 20px;
+    #links, #Connect, #footerButtons{
+        font-size: 1.6rem;
     }
+   
+    #footerButtons {        
+        justify-content: space-around;
+        width: 100%;
+    }
+
 }
