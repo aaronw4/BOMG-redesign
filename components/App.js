@@ -1,10 +1,10 @@
 import React from 'react';
 import data from './data';
 
-export function App() {
+function App() {
     return(
         <div>
-            {data.map(condition => {
+            {Data.map(condition => {
                 <div className={condition.id}>
                     <h1 className='title'>{condition.name}</h1>
                     <img src={condition.image} className='condImg'/>
