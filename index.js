@@ -56,29 +56,45 @@ var App = function (_React$Component) {
     function App(props) {
         _classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.state = { display: true };
+        _this.click = _this.click.bind(_this);
+        return _this;
     }
 
     _createClass(App, [{
+        key: 'click',
+        value: function click(e) {
+            this.setState({ display: !this.state.display });
+        }
+    }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             return React.createElement(
                 'div',
                 null,
                 Data.map(function (condition) {
                     return React.createElement(
                         'div',
-                        { className: condition.id, key: condition.id },
+                        { className: 'condCont', key: condition.id },
                         React.createElement(
-                            'h1',
+                            'h3',
                             { className: 'title' },
                             condition.name
                         ),
                         React.createElement('img', { src: condition.image, className: 'condImg' }),
                         React.createElement(
                             'p',
-                            { className: 'description' },
+                            { style: { display: _this2.state.display ? 'none' : 'block' }, className: 'description' },
                             condition.description
+                        ),
+                        React.createElement(
+                            'button',
+                            { onClick: _this2.click, className: 'condButton' },
+                            _this2.state.display ? 'Show Description' : 'Hide Description'
                         )
                     );
                 })

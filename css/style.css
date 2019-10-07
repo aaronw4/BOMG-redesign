@@ -215,7 +215,7 @@ header {
     text-align: left;
 }
 
-.rightcontent img {
+.homeImg  {
     height: auto;
     width: 100%;
 }
@@ -425,93 +425,40 @@ header {
 }
 
 /*---------------------------Common-Conditions-lightbox---------------------------*/
-
-.box {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;	
+.condCont {
+    border: 5px solid var(--Shadow-Color);
+    margin: 50px 20px;
+ }
+ 
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 50px 0;
 }
 
-.boxLeft {
-	width: 35%;		
-}
-
-.boxLeft p{
-	text-align: center;
-	font-size: 2rem;
-}
-
-.boxRight {
-	width: 60%;
-	font-size: 2.5rem;
-    padding-right: 5%;
-    padding-left: 5%;
-	padding-top: 1rem;
-	padding-bottom: 2rem;
-}
-
-.litebox {
-    clear: none;
-    padding-bottom: .5rem;
-}
-
-.litebox a {
+.condImg {
+    width: 90%;
     display: block;
-    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.litebox a:hover {
-    position: relative;
-}
-
-.litebox span img {
-    margin-bottom: 1px;
-    height: auto;
-    width: 80rem;
-    background-color: #E1DF54;
-    border: 3px solid #E1DF54;
-}
-
-.litebox a span {
-    position: absolute;
+.description {
     display: none;
-    padding: .5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    font-size: 2rem;
 }
 
-.litebox img {
-    height: auto;
-    width: 100%;
-    border: 0 Transparent Red;
-    border-width: 2px;
-}
-
-.litebox a:hover span {
+.condButton {
     display: block;
-    top: 1px;
-    right: 150px;
-    left: 100px;
-    z-index: 100;
-}
-
-.nolitebox img {
-    -webkit-filter: grayscale(110%);
-    -moz-filter: grayscale(110%);
-    -o-filter: grayscale(110%);
-    -ms-filter: grayscale(110%);
-    filter: grayscale(110%);
-}
-
-#listtitle1 {
-    font-size: 2.5rem;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-#listtitle2 {
-    font-size: 2.5rem;
-    padding-left: 30%;
-    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*---------------------------Directions-&-Parking---------------------------*/

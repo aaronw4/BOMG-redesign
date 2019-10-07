@@ -51,19 +51,28 @@ const Data = [
     }
 ]
 
+
+
 class App extends React.Component {
     constructor(props) {
         super(props);
-      }    
+        this.state = {display: true};
+        this.click = this.click.bind(this);
+      }  
     
+    click(e) {
+        this.setState({display: !this.state.display});
+    }
+
     render() {  
         return(
-            <div>               
+            <div >               
                 {Data.map(condition => 
-                <div className={condition.id} key={condition.id}>
-                    <h1 className='title'>{condition.name}</h1>
+                <div className='condCont' key={condition.id}>
+                    <h3 className='title'>{condition.name}</h3>
                     <img src={condition.image} className='condImg'/>
-                    <p className='description'>{condition.description}</p>
+                    <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
+                    <button onClick={this.click} className='condButton'>{this.state.display ? 'Show Description': 'Hide Description'}</button>
                 </div>
             )}
             </div>
@@ -72,3 +81,4 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('common'));
+ 
