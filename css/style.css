@@ -443,6 +443,18 @@ header {
     margin-right: auto;
 }
 
+#FF img {
+    width: 80%;
+}
+
+#Cataract img, #LVS img {
+    width: 70%;
+}
+
+#DRD img, #Glaucoma img, #MD img {
+    width: 60%;
+}
+
 .description {
     display: none;
     width: 90%;

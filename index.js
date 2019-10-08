@@ -79,7 +79,7 @@ var App = function (_React$Component) {
                 Data.map(function (condition) {
                     return React.createElement(
                         'div',
-                        { className: 'condCont', key: condition.id },
+                        { className: 'condCont', id: condition.id },
                         React.createElement(
                             'h3',
                             { className: 'title' },

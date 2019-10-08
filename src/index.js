@@ -66,7 +66,7 @@ class App extends React.Component {
         return(
             <div >               
                 {Data.map(condition => 
-                <div className='condCont' key={condition.id}>
+                <div className='condCont' id={condition.id}>
                     <h3 className='title'>{condition.name}</h3>
                     <img src={condition.image} className='condImg'/>
                     <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
