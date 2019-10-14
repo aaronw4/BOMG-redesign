@@ -1,3 +1,6 @@
+// Type 'npx babel --watch src --out-dir . --presets react-app/prod'
+// in the terminal if changes are made to the index.js file.
+// This will update the website
 'use strict';
 
 const Data = [
@@ -67,7 +70,7 @@ class App extends React.Component {
             <div >               
                 {Data.map(condition => 
                 <div className='condCont' id={condition.id}>
-                    <h3 className='title'>{condition.name}</h3>
+                    <a name={condition.id}><h3 className='title'>{condition.name}</h3></a>                    
                     <img src={condition.image} className='condImg'/>
                     <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
                     <button onClick={this.click} className='condButton'>{this.state.display ? 'Show Description': 'Hide Description'}</button>

@@ -1,3 +1,6 @@
+// Type 'npx babel --watch src --out-dir . --presets react-app/prod'
+// in the terminal if changes are made to the index.js file.
+// This will update the website
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -81,9 +84,13 @@ var App = function (_React$Component) {
                         'div',
                         { className: 'condCont', id: condition.id },
                         React.createElement(
-                            'h3',
-                            { className: 'title' },
-                            condition.name
+                            'a',
+                            { name: condition.id },
+                            React.createElement(
+                                'h3',
+                                { className: 'title' },
+                                condition.name
+                            )
                         ),
                         React.createElement('img', { src: condition.image, className: 'condImg' }),
                         React.createElement(
