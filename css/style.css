@@ -101,7 +101,7 @@ h2 {
     border-radius: 5px;
 }
 
-#leftcontainer a img {
+#logo {
     width: 90%;
     height: auto;
     border: 5px solid var(--Div-BG-Color);
@@ -109,9 +109,12 @@ h2 {
     margin: 2% 0 0 2%;
 }
 
+#menu, #menuItems, #menuItems a {
+    display: none;
+}
 /*--In memory of Indigo. You will never be forgotten--AW*/
 
-nav {
+#navFullScreen {
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -123,7 +126,7 @@ nav {
     padding-bottom: 13px;  
 }
 
-nav a {
+#navFullScreen a {
     color: #000;
     min-width: 95%;
     text-align: center;
@@ -136,7 +139,7 @@ nav a {
     padding: 10px 0;
 }
 
-nav .active {
+#navFullScreen .active {
     background-color: var(--Btn-Color-Active);
     color: var(--Btn-Color);
     border: solid 1px #203E5F;
@@ -587,30 +590,115 @@ footer {
 
 /*----------------------------------------------Media-Queries----------------------------------------------*/
 
-@media (max-width: 640px) {    
-    #leftcontainer a {
-        width: 0;
-        margin: 0;
-    }
-
-    #leftcontainer a img {
-        display: none;
-    }
-
-    nav {
+@media (max-width: 900px) {
+    .container {
         flex-direction: column;
-        flex-wrap: wrap;
-        min-width: 100%;
-        font-size: 2.2rem;
     }
 
-    nav a {
+    #leftbar {
+        position: relative;
         width: 100%;
     }
 
+    #leftcontainer {
+        height: 100%;
+        flex-direction: row;
+    }
+
+    #navFullScreen {
+        width: 20%;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #navFullScreen {
+        flex-direction: row;
+    }
+
     header {
-        padding-top: 20px;
+        padding-top: 10px;
+    }
+
+    #rightbar {
+        width: 100%;
+    }
+
+    .title1 {
+        font-size: 4rem;
+    }
+
+    #links, #Connect, #footerButtons{
+        font-size: 1.6rem;
+    }
+   
+    #footerButtons {        
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {    
+    /*#leftcontainer a {
+        width: 0;
+        margin: 0;
+    }*/
+
+    #menuCont {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background: var(--Div-BG-Color);        
+    }
+
+    #menuItems {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        height: 150px;
+        background-color: var(--Div-BG-Color);
+        font-size: 2.2rem;
+        padding-left: 5px;
+    }
+
+    #menuItems a {
+        display: block;
+    }
+
+    #menu:hover {
+        filter: brightness(75%)
+      }
+    
+    #menu {
+        display: block;
+    }
+
+    #navFullScreen {
+        display: none;
+        /*flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100%;
+        font-size: 2.2rem;*/
+    }
+
+    nav a {
+       /* width: 100%;*/
+    }
+
+    header {
+        padding-top: 50px;
         padding-bottom: 5px;
+    }
+
+    .title1 {    
+        font-size: 3.5rem;
+    }
+    
+    .title2 {
+        font-size: 2.5rem;
     }
 
     .insuranceInfo {
@@ -705,54 +793,4 @@ footer {
         line-height: 4rem;
         flex-basis: 280px;
     }
-}
-
-@media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-    }
-
-    #leftbar {
-        position: relative;
-        width: 100%;
-    }
-
-    #leftcontainer {
-        height: 100%;
-        flex-direction: row;
-    }
-
-    #leftcontainer nav {
-        width: 20%;
-    }
-
-    #leftcontainer a img {
-        display: none;
-    }
-
-    nav {
-        flex-direction: row;
-    }
-
-    header {
-        padding-top: 10px;
-    }
-
-    #rightbar {
-        width: 100%;
-    }
-
-    .title1 {
-        font-size: 4rem;
-    }
-
-    #links, #Connect, #footerButtons{
-        font-size: 1.6rem;
-    }
-   
-    #footerButtons {        
-        justify-content: space-around;
-        width: 100%;
-    }
-
 }
