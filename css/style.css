@@ -719,6 +719,15 @@ footer {
         display: flex;
     }
 
+    #menuItems a:hover {
+        background-color: var(--Main-BG-Color);
+        color: var(--Link-Color);
+    }
+
+    #menuItems .active {
+        text-decoration-line: underline;
+    }
+
     .showMenuItems {
         flex-direction: column;
         min-width: 100%;
@@ -733,18 +742,10 @@ footer {
 
     #menu:hover {
         filter: brightness(75%)
-      }
+    }
     
     #navFullScreen {
         display: none;
-        /*flex-direction: column;
-        flex-wrap: wrap;
-        min-width: 100%;
-        font-size: 2.2rem;*/
-    }
-
-    nav a {
-       /* width: 100%;*/
     }
 
     header {
