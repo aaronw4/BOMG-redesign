@@ -109,9 +109,10 @@ h2 {
     margin: 2% 0 0 2%;
 }
 
-#menu, #menuItems, #menuItems a {
+#menu, #menuItems {
     display: none;
 }
+
 /*--In memory of Indigo. You will never be forgotten--AW*/
 
 #navFullScreen {
@@ -644,38 +645,40 @@ footer {
         width: 0;
         margin: 0;
     }*/
+    
+    #menu {
+        display: block;
+    }
 
     #menuCont {
         width: 100%;
         height: 50px;
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 2;
         background: var(--Div-BG-Color);        
     }
 
     #menuItems {
         display: flex;
+    }
+
+    .showMenuItems {
         flex-direction: column;
         min-width: 100%;
         height: 150px;
         background-color: var(--Div-BG-Color);
         font-size: 2.2rem;
-        padding-left: 5px;
-    }
-
-    #menuItems a {
-        display: block;
+        padding: 50px 0 0 5px;
+        position: fixed;
+        top: 0;
+        z-index: 1; 
     }
 
     #menu:hover {
         filter: brightness(75%)
       }
     
-    #menu {
-        display: block;
-    }
-
     #navFullScreen {
         display: none;
         /*flex-direction: column;
