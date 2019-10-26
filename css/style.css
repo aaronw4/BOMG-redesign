@@ -2,17 +2,23 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
+    --Def-Font-Color:#FFF;
     --Main-BG-Color: #494949;
     --Div-BG-Color: #2B2B2B;
     --Btn-Color: #4479BA;
     --Btn-Color-Hover: #4f1d1e;
     --Btn-Color-Active: black;
-    --Shadow-Color: #480508;
+    --Box-Shadow-Color: #480508;
+    --Text-Shadow-Color: #480508;
+    --Link-Color:#E1DF54;
+    --Link-Color-Hover:#557ab5;
+    --Link-Shadow-Color: #FFF;
+    --Border-Bottom: 1px solid #fffffb;
 }
 
 html,
 body {
-    color: #FFF;
+    color: var(--Def-Font-Color);
     font-size: 62.5%;
 }
 
@@ -21,7 +27,7 @@ body {
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;    
-    background: #2B2B2B;
+    background: var(--Div-BG-Color);
 }
 
 body,
@@ -49,11 +55,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #E1DF54;
+    color: var(--Link-Color);
 }
 
 a:hover {
-    color: #6f92a7;
+    color: var(--Link-Color-Hover);
 }
 
 h1,
@@ -73,8 +79,8 @@ h2 {
     align-items: flex-start;
     min-width: 100%;
     padding-bottom: 10px;
-    box-shadow: inset 0 -2px 3px var(--Shadow-Color);
-    border-bottom: 1px solid #fffffb;
+    box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
+    border-bottom: var(--Border-Bottom);
     margin-top: 5px;
 }
 
@@ -148,7 +154,7 @@ h2 {
 
 nav a:hover {
     background: var(--Btn-Color-Hover);
-    color: #f6f6ee;
+    color: var(--Def-Font-Color);
 }
 
 /*----------------------------------------Right Side/Main Content--------------------------------------*/
@@ -162,8 +168,8 @@ nav a:hover {
 
 header {
     background: var(--Div-BG-Color);
-    box-shadow: inset 0 -2px 3px #480508;
-    border-bottom: 1px solid #fffffb;
+    box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
+    border-bottom: var(--Border-Bottom);
     display: block;
     width: 100%;
     text-align: center;
@@ -172,10 +178,10 @@ header {
 }
 
 .title1, .title2 {
-    text-shadow: 3px 3px 3px var(--Shadow-Color);
+    text-shadow: 3px 3px 3px var(--Text-Shadow-Color);
     text-transform: capitalize;
     font-weight: 400;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     position: relative;
     text-align: center;
 }
@@ -190,7 +196,7 @@ header {
 
 .hours {
     font-size: 1.5rem;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     position: relative;
     text-align: center;
     padding-top: 10px;
@@ -240,6 +246,26 @@ header {
     margin: 0;
 }
 
+.panorama .Image {
+    margin: 0 auto;
+    cursor: all-scroll;
+  
+    width: 80%;
+    height: 0;
+    padding-bottom: 30%;
+
+    background-image: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/31289910_2167640306585951_3438488888044158976_o.jpg?_nc_cat=101&_nc_oc=AQn90E5XrnS49MyITyA81Q7-FpG5kZUCD_T3lj8eo9rNYyFROght9FO2Kau5YnahqMUeTRMfexgEsGkRJqh_gTxM&_nc_ht=scontent-sjc3-1.xx&oh=46e8b68b77616af0c3fc454eb7817f6c&oe=5E211BEB");
+ /* background-image: url("images/office.jpg");*/
+    background-size: cover;
+    background-position: 100% 0;
+  
+    transition: background-position 1s linear;
+  }     
+
+.panorama:hover .Image {
+   background-position: 1%;
+ }                     
+
 .extLinkContainer {
     display: flex;
     flex-wrap: wrap;
@@ -250,30 +276,51 @@ header {
 
 .extLink {
     width: 40%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    position: relative;
 }
 
 .extLink a img {
+    min-height:86px;
     height: auto;
     width: 100%;
     background-color: #FFF;
+    border-radius: 12px;
+    padding:15px;
 }
 
-.extLink p {
-    font-size: 2.5rem;
-    background: var(--Div-BG-Color);
-    text-align: center;
-    padding: 0;
-}
+.extLink .bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+  }
+
+.extLink .bottom-right {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+  }
 
 /*----------------------------------------------Staff----------------------------------------------*/
 
 .pagetitle {
-    text-shadow: 3px 3px 3px var(--Shadow-Color);
+    text-shadow: 3px 3px 3px var(--Text-Shadow-Color);
     text-transform: capitalize;
     font-size: 4rem;
     font-weight: 400;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     text-align: center;
     padding: 50px 0;
 }
@@ -335,7 +382,7 @@ header {
     left: 0;
     text-align: left;
     font-size:3.5em;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     width: 100%;
     background-color: var(--Btn-Color);
 }
@@ -388,7 +435,7 @@ header {
     text-transform: Sentence;
     font-size: 1.5rem;
     font-weight: normal;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     position: relative;
     text-align: center;
     padding-bottom: 20px;
@@ -501,7 +548,7 @@ header {
 
 .parkinglot{
     margin-left:20px;
-    color: #FFF;
+    color: var(--Def-Font-Color);
     font-size: 1.25rem;
 }
 
@@ -542,7 +589,7 @@ iframe {
 
 #bottomContainer {
     box-shadow: inset 0 -2px 3px var(--Shadow-Color);
-    border-bottom: 1px solid #fffffb;
+    border-bottom: var(--Border-Bottom);
     margin: 50px 0;
     padding-bottom: 50px;
 }
@@ -563,15 +610,24 @@ iframe {
     background-color: #4169E1;
     border-radius: .5rem;
     margin: 1rem 1rem 1rem 0;
-    padding: 1rem 1.4rem;
+    padding: 1rem 1.5rem;
+    border:0.1px solid transparent;
 }
 
 .fa-yelp {
     color: #FFF;
     background-color: #FF4500;
     border-radius: .5rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     padding: 1rem 1.2rem;
+    border:0.1px solid transparent;
+}
+
+.fa-facebook:hover,
+.fa-yelp:hover{
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+    border:0.1px solid black;
 }
 
 footer {
