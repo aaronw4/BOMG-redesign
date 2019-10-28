@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css" media="screen">
 	<title>Berkeley Ophthalmology Medical Group, Inc.</title>
 	<link href="favicon.ico" rel="shortcut icon">
+	<script src="menu.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,19 @@
 
 		<div id="leftbar">
 			<div id="leftcontainer">
-				<a href="index.html"><img src="images/logo.png"></a>
-				<nav>
+				<a href="index.html" ><img src="images/logo.png" id="logo"></a>				
+				<div id="menuCont">	
+					<a href='javascript:void(0);' onclick="menu()"><img src='images/menu.png' id="menu"/></a>	
+				</div>			
+				<div id="menuItems">
+					<a class="active" href="index.html">Home</a>
+					<a href="staff.html">Our Staff</a>
+					<a href="parking.html">Directions &amp; Parking</a>
+					<a href="resources.html">Resources</a>
+					<a href="commonconditions.html">Common Conditions</a>
+				</div>
+				
+				<nav id=navFullScreen>
 					<a class="active" href="index.html">Home</a>
 					<a href="staff.html">Our Staff</a>
 					<a href="parking.html">Directions &amp; Parking</a>
