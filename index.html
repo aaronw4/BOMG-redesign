@@ -14,73 +14,127 @@
 </head>
 
 <body>
-	<div class="container">
+	<div id="navBar">			
+		<div id="menuCont">	
+			<a href='javascript:void(0);' onclick="menu()"><img src='images/menu.png' id="menu"/></a>	
+		</div>			
+		<div id="menuItems">
+			<a class="active" href="index.html">Home</a>
+			<a href="staff.html">Our Staff</a>
+			<a href="parking.html">Directions &amp; Parking</a>
+			<a href="resources.html">Resources</a>
+			<a href="commonconditions.html">Common Conditions</a>
+		</div>
+		
+		<nav id=navFullScreen>
+			<img src="images/logo.png" id="logo">
+			<a class="active" href="index.html">Home</a>
+			<a href="staff.html">Our Staff</a>
+			<a href="parking.html">Directions &amp; Parking</a>
+			<a href="resources.html">Resources</a>
+			<a href="commonconditions.html">Common Conditions</a>
+		</nav>
+	</div>
 
-		<div id="leftbar">
-			<div id="leftcontainer">
-				<a href="index.html" ><img src="images/logo.png" id="logo"></a>				
-				<div id="menuCont">	
-					<a href='javascript:void(0);' onclick="menu()"><img src='images/menu.png' id="menu"/></a>	
-				</div>			
-				<div id="menuItems">
-					<a class="active" href="index.html">Home</a>
-					<a href="staff.html">Our Staff</a>
-					<a href="parking.html">Directions &amp; Parking</a>
-					<a href="resources.html">Resources</a>
-					<a href="commonconditions.html">Common Conditions</a>
+	<header>
+		<p class="title1">BERKELEY OPHTHALMOLOGY</p> 
+		<p class="title2">MEDICAL GROUP, INC.</p>
+		<p class="hours"><strong>Office Hours:</strong> Mon - Fri (8a -12p &amp; 1p - 5p)</p>
+		<p class="closed">We are closed on Thursday November 28th, 2019 & Friday November 29th, 2019 in observance of
+			Thanksgiving</p>
+		<p class="alert">COVID</p>
+	</header>
+
+	<div class="mainBody">
+		<!--This is where JavaScript is inserted. Inner container div class='carouselCont'----->
+		<!-- <div id="carousel"></div> -->
+		<!--imgs have class='carouselImg' ----------------------------------------------------->
+		
+		<h1>Welcome to ... We offer...</h1>
+		<div>
+			<section id="topbar" class="telehealth">
+				<p id="pagetitle">TeleHealth</p>
+				<h2>You must have an appointment scheduled to use this feature.</h2>
+				<h3>If you would like to schedule an appointment. Please call: (510) 548-6630 </h3>
+		   </section> 
+		   <section id="topbar" class="GraySection telehealth">
+				<div class="container">
+					<div class="doxyme-badge doxyme-badge-horizontal">
+						<div class="doxyme-badge-horizontal-image">
+							<img src="https://www.gravatar.com/avatar/ce5122473bcab61e1c719e2f0ae27499?s=240"/>
+						</div>
+						<div class="doxyme-badge-indicator" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="62ef0030-62e3-11ea-b1cf-9b4e23387dd7:web" data-channel="room--180045" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-content">
+							<div class="doxyme-badge-start-a-call"></div>
+							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/litwin" target="_blank">Start a telemedicine call with</a>
+							<div class="doxyme-badge-doctor-name">Dr Joshua Litwin</div>
+							<div>
+								<a class="doxyme-badge-start-button btn-primary" href="https://bomg.doxy.me/litwin" target="_blank">Enter waiting room</a>
+							</div>
+							<div>
+								<div class="doxyme-badge-powered-by">
+									<a href="https://doxy.me" target="_blank">Telemedicine</a> by
+								</div>
+								<div class="doxyme-badge-logo-link">
+									<a href="https://doxy.me" target="_blank">Doxy.me</a>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>		
+			</section>
+			<section id="topbar" class="GraySection telehealth">
+				<div class="container">
+					<div class="doxyme-badge doxyme-badge-horizontal">
+						<div class="doxyme-badge-horizontal-image">
+							<img src="https://www.gravatar.com/avatar/a0ab4596dd39134fc0b05a5f72ec813f?s=240"/>
+						</div>
+						<div class="doxyme-badge-indicator" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="2c493c30-6879-11ea-bdd1-6bcb465d4cc9:web" data-channel="room--181634" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-content">
+							<div class="doxyme-badge-start-a-call"></div>
+							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/drsu" rel="noreferrer" target="_blank">Start a telemedicine call with</a><div class="doxyme-badge-doctor-name">Dr. Susan Su</div>
+							<div>
+								<a class="doxyme-badge-start-button btn-primary" href="https://bomg.doxy.me/drsu" rel="noreferrer" target="_blank">Enter waiting room</a>
+							</div>
+							<div>
+								<div class="doxyme-badge-powered-by">
+									<a href="https://doxy.me" rel="noreferrer" target="_blank">Telemedicine</a> by
+								</div>
+								<div class="doxyme-badge-logo-link">
+									<a href="https://doxy.me" rel="noreferrer" target="_blank">Doxy.me</a>
+								</div>
+							</div>
+						</div>
+					</div>				
 				</div>
-				
-				<nav id=navFullScreen>
-					<a class="active" href="index.html">Home</a>
-					<a href="staff.html">Our Staff</a>
-					<a href="parking.html">Directions &amp; Parking</a>
-					<a href="resources.html">Resources</a>
-					<a href="commonconditions.html">Common Conditions</a>
-				</nav>
+			</section>
+			<section id="topbar" class="GraySection telehealth">
+				<img src="https://www.bomg.org/images/PatientFlyerLitwin.png" style="max-width:99%; position:relative;"/>
+			</section>
+
+		</div>
+		<h5>Below are some external links that you might find helpful.</h5>
+		<div class="extLinkContainer">
+			<div class="extLink" title="myCare: (Patient Portal)">
+				<a href="https://imwportal.mednetworx.com/bomg/" target="_blank"><img src="images/myCareLogo.png">
+				<div class="bottom-right">Patient Portal</div></a>
+			</div>
+
+			<div class="extLink" title="Secure Upload (Powered by hushmail)">
+				<a href="https://hushforms.com/medrecords" target="_blank"><img src="images/HushMaillogo.png">
+				<div class="bottom-left">Secure Upload</div></a>
+			</div>
+
+			<div class="extLink" title="Eye Smart (English)">
+				<a href="https://www.aao.org/eye-health" target="_blank"><img src="images/aao_logo_2x.png">
+				<div class="bottom-right">EyeSmart &#x00AE;</div></a>
+			</div>
+
+			<div class="extLink" title="Eye Smart (Español)">
+				<a href="https://www.aao.org/salud-ocular" target="_blank"><img src="images/aao_logo_2x.png">
+				<div class="bottom-right">OjosSanos &#x2122;</div></a>
 			</div>
 		</div>
-
-		<div id="rightbar">
-			<header>
-				<p class="title1">BERKELEY OPHTHALMOLOGY</p> 
-				<p class="title2">MEDICAL GROUP, INC.</p>
-				<p class="hours"><strong>Office Hours:</strong> Mon - Fri (8a -12p &amp; 1p - 5p)</p>
-				<p class="closed">We are closed on Thursday November 28th, 2019 & Friday November 29th, 2019 in observance of
-					Thanksgiving</p>
-			</header>
-
-			<div class="rightcontent">
-
-				<!--This is where JavaScript is inserted. Inner container div class='carouselCont'----->
-				<div id="carousel"></div>
-				<!--imgs have class='carouselImg' ----------------------------------------------------->
-				
-				<h1>Welcome to ... We offer...</h1>
-				<h5>Below are some external links that you might find helpful.</h5>
-				<div class="extLinkContainer">
-					<div class="extLink" title="myCare: (Patient Portal)">
-						<a href="https://imwportal.mednetworx.com/bomg/" target="_blank"><img src="images/myCareLogo.png">
-						<div class="bottom-right">Patient Portal</div></a>
-					</div>
-
-					<div class="extLink" title="Secure Upload (Powered by hushmail)">
-						<a href="https://hushforms.com/medrecords" target="_blank"><img src="images/HushMaillogo.png">
-						<div class="bottom-left">Secure Upload</div></a>
-					</div>
-
-					<div class="extLink" title="Eye Smart (English)">
-						<a href="https://www.aao.org/eye-health" target="_blank"><img src="images/aao_logo_2x.png">
-						<div class="bottom-right">EyeSmart &#x00AE;</div></a>
-					</div>
-
-					<div class="extLink" title="Eye Smart (Español)">
-						<a href="https://www.aao.org/salud-ocular" target="_blank"><img src="images/aao_logo_2x.png">
-						<div class="bottom-right">OjosSanos &#x2122;</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 
 	<div id="bottomContainer">
