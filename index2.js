@@ -47,7 +47,7 @@ var Carousel = function (_React$Component) {
 
             var timer = function timer() {
                 if (_this2.state.start === false) {
-                    setInterval(changeImg, 2000); /* <-- Change time by changing number (2000 = 2 seconds)*/
+                    setInterval(changeImg, 5000); /* <-- Change time by changing number (2000 = 2 seconds)*/
                     _this2.setState({ start: true });
                 }
             };
