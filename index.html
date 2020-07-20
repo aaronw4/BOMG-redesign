@@ -44,6 +44,12 @@
 		<p class="closed">We are closed on Thursday November 28th, 2019 & Friday November 29th, 2019 in observance of Thanksgiving</p>
 	</header>
 
+	<div>		
+		<p class="mobileHours"><strong>Office Hours:</strong> Mon - Fri (8a -12p &amp; 1p - 5p)</p>
+		<p class="mobileClosed">We are closed on Thursday November 28th, 2019 & Friday November 29th, 2019 in observance of Thanksgiving</p>
+		
+	</div>
+
 	<div class="alert">
 		<p><strong>Notice to all of our patients: </strong> As we move to a new "normal" in patient care, We are taking the following necessary precautions to ensure the health, safety, and well-being of our patients, staff and doctors.</p>
 		<h4>Federal (CDC) and State guidelines for safety:</h4>
@@ -65,8 +71,9 @@
 			<!--This is where JavaScript is inserted. Inner container div class='carouselCont'----->
 			<div id="carousel"></div>
 			<!--imgs have class='carouselImg' ----------------------------------------------------->
-			<div>
+			<div class="introCont">
 				<p class="intro1stLine">Welcome to Berkeley Ophthalmology Medical Group!</p>
+				<br><br>
 				<p class="introParagraph">We offer a full range of eye-health options including:</p>
 				<br>
 				<ul class="introList">
@@ -77,7 +84,7 @@
 				</ul>
 				<br>
 				<p class="introParagraph">
-					Thank you for visiting out site. 
+					Thank you for visiting our site. 
 					Please scroll down for more information. 
 				</p>
 			</div>			
@@ -97,11 +104,11 @@
 		   	<div class="thSubCont">
 				<img class="telehealthDirections" src="https://www.bomg.org/images/PatientFlyerLitwin.png"/>
 				<section class="GraySection telehealth thDoctors">
-					<div class="doxyme-badge doxyme-badge-horizontal">
+					<div class="doxyme-badge doxyme-badge-horizontal" id="thLitwin">
 						<div class="doxyme-badge-horizontal-image">
-							<img src="https://www.gravatar.com/avatar/ce5122473bcab61e1c719e2f0ae27499?s=240"/>
+							<img id="thImg" src="https://www.gravatar.com/avatar/ce5122473bcab61e1c719e2f0ae27499?s=240"/>
 						</div>
-						<div class="doxyme-badge-indicator" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="62ef0030-62e3-11ea-b1cf-9b4e23387dd7:web" data-channel="room--180045" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-indicator" id="thDot" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="62ef0030-62e3-11ea-b1cf-9b4e23387dd7:web" data-channel="room--180045" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
 						<div class="doxyme-badge-content">
 							<div class="doxyme-badge-start-a-call"></div>
 							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/litwin" target="_blank">Start a telemedicine call with</a>
@@ -119,11 +126,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="doxyme-badge doxyme-badge-horizontal">
-						<div class="doxyme-badge-horizontal-image">
-							<img src="https://www.gravatar.com/avatar/a0ab4596dd39134fc0b05a5f72ec813f?s=240"/>
+					<div class="doxyme-badge doxyme-badge-horizontal" id="thSu">
+						<div class="doxyme-badge-horizontal-image" >
+							<img id="thImg" src="https://www.gravatar.com/avatar/a0ab4596dd39134fc0b05a5f72ec813f?s=240"/>
 						</div>
-						<div class="doxyme-badge-indicator" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="2c493c30-6879-11ea-bdd1-6bcb465d4cc9:web" data-channel="room--181634" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-indicator" id="thDot" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="2c493c30-6879-11ea-bdd1-6bcb465d4cc9:web" data-channel="room--181634" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
 						<div class="doxyme-badge-content">
 							<div class="doxyme-badge-start-a-call"></div>
 							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/drsu" rel="noreferrer" target="_blank">Start a telemedicine call with</a><div class="doxyme-badge-doctor-name">Dr. Susan Su</div>
