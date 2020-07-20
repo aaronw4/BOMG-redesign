@@ -2,17 +2,14 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
-    --Def-Font-Color:#FFF;
-    --Main-BG-Color: #494949;
-    --Div-BG-Color: #2B2B2B;
-    --Btn-Color: #4479BA;
-    --Btn-Color-Hover: #4f1d1e;
-    --Btn-Color-Active: black;
-    --Box-Shadow-Color: #480508;
-    --Text-Shadow-Color: #480508;
-    --Link-Color:#E1DF54;
-    --Link-Color-Hover:#557ab5;
-    --Link-Shadow-Color: #FFF;
+    --Def-Font-Color:black;
+    --Main-BG-Color: #fffff0;
+    --Staff-BG-Color: #6B6B41;
+    --Staff-Header-BG-Color: #2B2B2B;
+    --Staff-Link-Color:#DDDDBD;
+    --Staff-Link-Color-Hover:#FFFFEE;
+    --Link-Color:#3914AF;
+    --Link-Color-Hover:#7E60DE;
     --Border-Bottom: 1px solid #fffffb;
 }
 
@@ -26,8 +23,7 @@ body {
     background-color: var(--Main-BG-Color);
     max-width: 100%;
     box-sizing: border-box;
-    margin: 0 auto;    
-    background: var(--Div-BG-Color);
+    margin: 0 auto;  
 }
 
 body,
@@ -55,11 +51,7 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--Link-Color);
-}
-
-a:hover {
-    color: var(--Link-Color-Hover);
+    color: var(--Def-Font-Color);
 }
 
 h1,
@@ -69,50 +61,18 @@ h3 {
     font-weight: 400;
 }
 
-h2 {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-}
+/*-------------------------------------------Navigation----------------------------------------------*/
 
-.container {
-    display: flex;
-    align-items: flex-start;
-    min-width: 100%;
-    padding-bottom: 10px;
-    box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
-    border-bottom: var(--Border-Bottom);
-    margin-top: 5px;
-}
-
-.container section {
-    border-radius: 5px;
-    height: auto;
-}
-
-/*-------------------------------------------Left Bar/Navigation----------------------------------------------*/
-
-#leftbar {
-    width: 25%;
-    height: 100%;
+#navBar {
+    width: 100%;
     position: sticky;
     top: 0;
-}
-
-#leftcontainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background: var(--Div-BG-Color);
-    border-radius: 5px;
+    z-index: 5; 
 }
 
 #logo {
-    width: 90%;
+    width: 5%;
     height: auto;
-    border: 5px solid var(--Div-BG-Color);
-    border-bottom: 8px solid var(--Div-BG-Color);
-    margin: 2% 0 0 2%;
 }
 
 #menu, #menuItems {
@@ -123,66 +83,48 @@ h2 {
 
 #navFullScreen {
     display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-left: 2%;
-    margin-right: 2%;
+    justify-content: space-around;
+    align-items: center;
     font: 200 2.5rem/1.5 Helvetica, Verdana, sans-serif;
-    border-bottom: 0 solid #ccc;
-    font-weight: 700;
-    padding-bottom: 13px;  
+    padding-bottom: 13px; 
+    background-color: var(--Main-BG-Color);
 }
 
 #navFullScreen a {
-    color: #000;
-    min-width: 95%;
     text-align: center;
-    background: var(--Btn-Color);
-    border-radius: 4px;
-    border: solid 1px #20538D;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    user-select: none;
-    transition: font-size .3s ease, background-color .3s ease;
     padding: 10px 0;
 }
 
 #navFullScreen .active {
-    background-color: var(--Btn-Color-Active);
-    color: var(--Btn-Color);
-    border: solid 1px #203E5F;
+    text-decoration: underline;
 }
 
 nav a:hover {
-    background: var(--Btn-Color-Hover);
-    color: var(--Def-Font-Color);
-}
-
-/*----------------------------------------Right Side/Main Content--------------------------------------*/
-
-#rightbar {
-    width: 75%;
-    height: auto;
+    font-weight: bold;
 }
 
 /*------------------------------------------------Header----------------------------------------------*/
 
 header {
-    background: var(--Div-BG-Color);
-    box-shadow: inset 0 -2px 3px var(--Box-Shadow-Color);
-    border-bottom: var(--Border-Bottom);
-    display: block;
-    width: 100%;
+    width: 80%;
     text-align: center;
+    margin: 50px auto;
     padding-top: 50px;
     padding-bottom: 28px;
+    background: url("../images/office.jpg") no-repeat center;   
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    text-shadow: 
+        -2px 2px 0 #000, 
+        2px 2px 0 #000, 
+        2px -2px 0 #000, 
+        -2px -2px 0 #000; 
+    font-weight: bolder;
 }
 
 .title1, .title2 {
-    text-shadow: 3px 3px 3px var(--Text-Shadow-Color);
-    text-transform: capitalize;
     font-weight: 400;
-    color: var(--Def-Font-Color);
-    position: relative;
     text-align: center;
 }
 
@@ -196,8 +138,6 @@ header {
 
 .hours {
     font-size: 1.5rem;
-    color: var(--Def-Font-Color);
-    position: relative;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -208,55 +148,124 @@ header {
     margin:auto;
     font-weight: 700;
     font-size: 1.2rem;
-    position: relative;
     align-self: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius:2px;
-    box-shadow: 2px #2B2B2B;
-    color: #000;
-    background-color: #2196F3;
 }
 
+.mobileHours, .mobileClosed {
+    display: none;
+}
+
+.alert {    
+  width:80%;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #8D021F;
+  border: solid 1px #cc3300;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+.alert h4{
+    padding: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-shadow: 0.3px 0.2px  black;
+  }
+  
+  .square{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+    margin-left: -2rem;
+  }
+  .square li{
+    margin: 0.8em 0; 
+    line-height: 1.3em;
+      
+  }
+  
+.square li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 1em;
+    height: 1em;
+    padding: .3em;
+    margin-right: 0.8em;
+    border: .1em solid #ccc;
+    background:  #2B2B2B;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    
+  }
 /*------------------------------------------------Home Page--------------------------------------------*/
 
-.rightcontent {
-    width: 100%;
-    text-align: left;
-}
-
-.homeImg  {
-    height: auto;
-    width: 100%;
-}
-
-.rightcontent h1 {
-    font-size: 4rem;
-    padding-top: 100px;
-    background: var(--Div-BG-Color);
-    text-align: center;
-}
-
-.rightcontent h5 {
-    font-size: 2.5rem;
-    padding-top: 40px;
-    padding-bottom: 25px;
-    background: var(--Div-BG-Color);
-    text-align: center;
-    margin: 0;
+.intro {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 100px auto;
 }
 
 .carouselImg {
     display: block;
-    width: 50%;
+    width: 30vw;
     margin: 20px auto 20px auto;
+}
+
+.intro1stLine {
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.introParagraph {
+    font-size: 2.5rem;
+    padding: 0 25px;
+    text-align: left;
+}
+
+.introList {    
+    padding-left: 10%;
+}
+
+.introList li {
+    text-align: left;
+    font-size: 2.5rem;
+    list-style-type: disc;
+}
+
+.mainBody {
+    width: 100%;
+    text-align: center;
+}
+
+.mainBody h1 {
+    font-size: 4rem;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.mainBody h5 {
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 0;
 }
 
 .extLinkContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    background: var(--Div-BG-Color);
+    width: 80%;
+    margin: 50px auto;
     justify-content: space-around;
 }
 
@@ -269,7 +278,7 @@ header {
 .extLink a img {
     min-height:86px;
     height: auto;
-    width: 100%;
+    width: 80%;
     background-color: #FFF;
     border-radius: 12px;
     padding:15px;
@@ -299,31 +308,351 @@ header {
     border-radius: 2px;
   }
 
+  div.doxyme-badge,
+  div.doxyme-badge a,
+  div.doxyme-badge div,
+  div.doxyme-badge img,
+  div.doxyme-badge#doxyme-badge,
+  div.doxyme-badge#doxyme-badge a,
+  div.doxyme-badge#doxyme-badge div,
+  div.doxyme-badge#doxyme-badge img {
+   caption-side:top;
+   direction:ltr;
+   empty-cells:show;
+   font-size:medium;
+   font-style:normal;
+   font-variant:normal;
+   font-weight:400;
+   list-style-type:disc;
+   opacity:1;
+   outline-color:invert;
+   outline-width:medium;
+   overflow:visible;
+   overflow-x:visible;
+   overflow-y:visible;
+   perspective-origin:50% 50%;
+   right:auto;
+   tab-size:8;
+   transition-timing-function:ease;
+   vertical-align:baseline;
+   all:initial;
+  }
+  div.doxyme-badge,
+  div.doxyme-badge#doxyme-badge {
+   display:block;
+   position:relative;
+  }
+  div.doxyme-badge div,
+  div.doxyme-badge#doxyme-badge div {
+   display:block
+  }
+  div.doxyme-badge a,
+  div.doxyme-badge#doxyme-badge a {
+   cursor:pointer
+  }
+  div.doxyme-badge a,
+  div.doxyme-badge div,
+  div.doxyme-badge#doxyme-badge a,
+  div.doxyme-badge#doxyme-badge div {
+   font-family:doxyproximanova,sans-serif
+  }
+  div.doxyme-badge div.doxyme-badge-indicator,
+  div.doxyme-badge span.doxyme-badge-indicator,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-indicator,
+  div.doxyme-badge#doxyme-badge span.doxyme-badge-indicator {
+   background:#ccc;
+   border-radius:50%;
+   transition:all .5s
+  }
+  div.doxyme-badge div.doxyme-badge-powered-by,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-powered-by {
+   display:inline-block;
+   color:#050608;
+   font-size:12px
+  }
+  div.doxyme-badge div.doxyme-badge-powered-by a,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-powered-by a {
+   color:#050608!important;
+   font-size:12px;
+   text-decoration:none
+  }
+  div.doxyme-badge div.doxyme-badge-logo-link,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-logo-link {
+   display:inline-block
+  }
+  div.doxyme-badge div.doxyme-badge-logo-link a,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-logo-link a {
+   display:inline-block;
+   height:25px;
+   margin-left:5px;
+   padding-left:25px;
+   background:0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAZCAYAAAA14t7uAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNjgwMTE3NDA3MjA2ODExODIyQUEyQUMzRTE0MjBGRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1N0RBREFGRUFDM0UxMUU3QkJCMENCMDg0ODU5NUMxNSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1N0RBREFGREFDM0UxMUU3QkJCMENCMDg0ODU5NUMxNSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDY4MDExNzQwNzIwNjgxMTgyMkFBMkFDM0UxNDIwRkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDY4MDExNzQwNzIwNjgxMTgyMkFBMkFDM0UxNDIwRkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz77AbrFAAABLklEQVR42mL8//8/Q/rZswxEAGUgdgViOSCuQpaYaWyMoZgFj0EgOXkg9gRiXyA2B2J+ID6PbjAuzbhACBDPA2JONPHvxHiPCY+cFBZDiQb4DP7DQAFgYqARwGfwL0oMhkWeHxCzAfF/pGAwJUK/MxCrApPrXzTHboEZvByIuchwWC4Q+2MRd2eiMKJ+4xD/BzP4Pz0jDx2sgeY4dmobDMpx72jh4kggnkJsMmQhI2n+J8XF3GTGEa7wZoa5oguIeaAWwbA4EPsAMSsegxcCMagwR84gzEB8ixFPQa8K1cSLJn4MiK0JFfT4Ig8UPIxDqnRjhIYX1Q3+QUnRic/gW0BsA8TVQHwKiH8SSGJEZxBQEroCxW1AbATE3kAsSYnBjFhy2TkohsnjzYEAAQYAGkU47T5HwJQAAAAASUVORK5CYII=) no-repeat;
+   line-height:25px;
+   font-size:14px;
+   font-weight:700;
+   color:#050608!important
+  }
+  div.doxyme-badge div.doxyme-badge-start-a-call,
+  div.doxyme-badge a.doxyme-badge-start-a-call,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-start-a-call,
+  div.doxyme-badge#doxyme-badge a.doxyme-badge-start-a-call {
+   color:#6cc!important;
+   line-height:.9em;
+   font-size:20px;
+   font-weight:300
+  }
+  div.doxyme-badge div.doxyme-badge-doctor-name,
+  div.doxyme-badge#doxyme-badge div.doxyme-badge-doctor-name {
+   margin:15px 0 10px;
+   color:#050608;
+   font-size:24px;
+   font-weight:700
+  }
+  div.doxyme-badge.doxyme-badge-horizontal,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge {
+   width:470px;
+   height:180px;
+   background-color:#fff;
+   border:2px solid #f3f6f6;
+   border-radius:8px;
+   box-shadow:-2px 2.3px 7px rgba(0,0,0,.02);
+   /* overflow:hidden; */
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-horizontal-image,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-horizontal-image {
+   position:relative;
+   height:100%;
+   width:180px;
+   overflow:hidden;
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-horizontal-image img,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-horizontal-image img {
+   display:inline-block;
+   height:100%;
+   position:relative;
+   left:0;
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-indicator,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-indicator {
+   position:absolute;
+   top:21px;
+   left:172px;
+   width:12px;
+   height:12px;
+   border:2px solid #fff;
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-content,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-content {
+   position:absolute;
+   top:0;
+   right:0;
+   width:275px;
+   padding:20px 0 0;
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-content a.doxyme-badge-start-a-call,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-content a.doxyme-badge-start-a-call {
+   border-bottom:1px solid #6cc;
+   transition:all .2s
+  }
+  div.doxyme-badge.doxyme-badge-horizontal div.doxyme-badge-content a.doxyme-badge-start-a-call:hover,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge div.doxyme-badge-content a.doxyme-badge-start-a-call:hover {
+   color:#40aeae!important;
+   border-bottom:1px solid #40aeae
+  }
+  div.doxyme-badge.doxyme-badge-horizontal a.doxyme-badge-start-button,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge a.doxyme-badge-start-button {
+   display:block;
+   padding:8px 0;
+   margin:15.3px 15px 15.3px 0;
+   color:#fff!important;
+   background:#6cc;
+   text-align:center;
+   font-weight:700;
+   font-size:16px;
+   border-radius:3px;
+   transition:all .2s
+  }
+  div.doxyme-badge.doxyme-badge-horizontal a.doxyme-badge-start-button:hover,
+  div.doxyme-badge.doxyme-badge-horizontal#doxyme-badge a.doxyme-badge-start-button:hover {
+   background:#40aeae
+  }
+  div.doxyme-badge.doxyme-badge-noimage,
+  div.doxyme-badge.doxyme-badge-noimage#doxyme-badge {
+   width:300px;
+   background-color:#fff;
+   border:2px solid #f3f6f6;
+   border-radius:8px;
+   box-shadow:-2px 2.3px 7px rgba(0,0,0,.02);
+   padding:10px
+  }
+  div.doxyme-badge.doxyme-badge-noimage a.doxyme-badge-start-a-call,
+  div.doxyme-badge.doxyme-badge-noimage#doxyme-badge a.doxyme-badge-start-a-call {
+   display:inline-block;
+   border-bottom:1px solid #6cc
+  }
+  div.doxyme-badge.doxyme-badge-noimage a.doxyme-badge-start-a-call:hover,
+  div.doxyme-badge.doxyme-badge-noimage#doxyme-badge a.doxyme-badge-start-a-call:hover {
+   color:#40aeae!important;
+   border-bottom:1px solid #40aeae
+  }
+  div.doxyme-badge.doxyme-badge-noimage span.doxyme-badge-indicator,
+  div.doxyme-badge.doxyme-badge-noimage#doxyme-badge span.doxyme-badge-indicator {
+   display:inline-block;
+   margin-left:20px;
+   width:14px;
+   height:14px
+  }
+  div.doxyme-badge.doxyme-badge-vertical,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge {
+   width:280px;
+   height:400px;
+   background-color:#fff;
+   border:2px solid #f3f6f6;
+   border-radius:8px;
+   box-shadow:-2px 2.3px 7px rgba(0,0,0,.02)
+  }
+  @media all and (max-width:400px) {
+   div.doxyme-badge.doxyme-badge-vertical,
+   div.doxyme-badge.doxyme-badge-vertical#doxyme-badge {
+    width:100%
+   }
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-start-a-call-div,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-start-a-call-div {
+   margin-top:35px;
+   text-align:center
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-start-a-call-div a,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-start-a-call-div a {
+   border-bottom:1px solid #6cc;
+   transition:all .2s
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-start-a-call-div a:hover,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-start-a-call-div a:hover {
+   color:#40aeae!important;
+   border-bottom:1px solid #40aeae
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-doctor-name,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-doctor-name {
+   margin:20px 0 25px;
+   text-align:center
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-vertical-image,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-vertical-image {
+   position:relative;
+   height:120px;
+   text-align:center
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-vertical-image img,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-vertical-image img {
+   display:inline-block;
+   width:120px;
+   height:120px;
+   border-radius:50%
+  }
+  div.doxyme-badge.doxyme-badge-vertical span.doxyme-badge-indicator,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge span.doxyme-badge-indicator {
+   position:absolute;
+   width:14px;
+   height:14px;
+   border:2px solid #fff;
+   left:131px;
+   top:51px;
+   margin-left:42.426px;
+   margin-top:-42.426px
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-vertical-footer,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-vertical-footer {
+   position:relative;
+   margin-top:30px;
+   padding-top:25px;
+   text-align:center
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-vertical-footer:before,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-vertical-footer:before {
+   position:absolute;
+   display:block;
+   content:"";
+   width:130px;
+   top:0;
+   left:75px;
+   border-top:1px solid #eee
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-logo-link-large,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-logo-link-large {
+   margin-top:15px;
+   text-align:center
+  }
+  div.doxyme-badge.doxyme-badge-vertical div.doxyme-badge-logo-link-large a,
+  div.doxyme-badge.doxyme-badge-vertical#doxyme-badge div.doxyme-badge-logo-link-large a {
+   display:inline-block;
+   height:35px;
+   margin-left:5px;
+   padding-left:35px;
+   background:0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAjCAYAAABsFtHvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTgwMTE3NDA3MjA2ODExODIyQUEyQUMzRTE0MjBGRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1N0RBREFGQUFDM0UxMUU3QkJCMENCMDg0ODU5NUMxNSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1N0RBREFGOUFDM0UxMUU3QkJCMENCMDg0ODU5NUMxNSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDU4MDExNzQwNzIwNjgxMTgyMkFBMkFDM0UxNDIwRkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDU4MDExNzQwNzIwNjgxMTgyMkFBMkFDM0UxNDIwRkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4cY8V/AAAA3UlEQVR42mJMO3OGgUygDcRuQOwK4sw0NvYi1QAWEtSKALEL1EJ3IJZCkjtIjuuJsTwFiDOB2BCIGRmoCIix3AeIjRhoAJgYBhCMWj5qOV0BKKsZEFDDT6qh6WfPcgIpdQLK7oAsP08DT6kTYa7jaIIbtZxUcHsgLY8D4p8DZfkiIGYfKMtVR1P7qOWk1mqGBNT0A7EDiebeJMJccK12gYCij6T6CNiB+E6EuaMJbtTyUctRwBYgPgfE/wfC8jlAbAzEYkAcCcTzgfgZvbrIMPAGiFdAMcbIBDkAIMAAr/MfhexfF1YAAAAASUVORK5CYII=) no-repeat;
+   line-height:35px;
+   font-size:20px;
+   font-weight:700
+  }
+
+.thCont {
+    background-color: white;
+}
+
+.thHeader {    
+    margin-bottom: 50px;
+}
+
+.thHeader h2 {
+    font-size: 2.5rem;
+}
+
+.thHeader h3 {
+    font-size: 2rem;
+}
+
+.thSubCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.thDoctors {
+    display: flex;
+    width: 80%;
+    margin: 50px auto 100px auto;
+    justify-content: center;
+}
+
+.telehealthDirections {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+  
 /*----------------------------------------------Staff----------------------------------------------*/
 
 .pagetitle {
-    text-shadow: 3px 3px 3px var(--Text-Shadow-Color);
     text-transform: capitalize;
     font-size: 4rem;
     font-weight: 400;
     color: var(--Def-Font-Color);
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .Profile-Container {
     display: flex;
     flex-wrap: wrap;
     font-size: .5rem;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
     margin-right: 5px;
 }
 
 .Doc-Profile {
     margin: auto;
     background-color: transparent;
-    width: 300px;
-    height: 400px;
+    width: 27vw;
+    height: 36vw;
     perspective: 1000px;
     margin-bottom: 10px;
 }
@@ -334,8 +663,8 @@ header {
 }
 
 .Doc-Profile img {
-    width: 300px;
-    max-height: 330px;
+    width: 100%;
+    height: auto;
 }
 
 .Profile-Card {
@@ -358,8 +687,8 @@ header {
 }
 
 .Profile-Card-Front {
-    background-color: var(--Main-BG-Color,transparent);
-    color: black;
+    background-color: var(--Staff-BG-Color, transparent);
+    color: var(--Def-Font-Color);
 }
 
 .Profile-Caption {
@@ -370,7 +699,7 @@ header {
     font-size:3.5em;
     color: var(--Def-Font-Color);
     width: 100%;
-    background-color: var(--Btn-Color);
+    background-color: var(--Staff-BG-Color);
 }
 
 .Profile-Caption h4{
@@ -387,31 +716,41 @@ header {
 }
 
 .Profile-Card-Back {
-    background-color: var(--Btn-Color);
+    background-color: var(--Staff-BG-Color);
     color: white;
     transform: rotateY(180deg);
 }
 
-.Profile-Card-Back h1{
+.Profile-Card-Back h1 {
     position: absolute;
     width: 100%;
     padding-top: 0;
     top: 0;
     left: 0;
     text-align: center;
-    background-color: var(--Div-BG-Color);
+    background-color: var(--Staff-Header-BG-Color);
     font-size: 2.5rem;  
 }
 
-.Profile-Card-Back p{
+.Profile-Card-Back p {
     position: absolute;
     width: 97%;
-    top: 2.5em;
-    left: .5rem;
-    margin-right: 1.7rem;
+    top: 6%;
+    left: 5px;
+    margin-right: 17px;
     text-align: left;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+}
+
+.Profile-Card-Back p a {
+    color: var(--Staff-Link-Color);
+    font-weight: bold;
+}
+
+.Profile-Card-Back p a:hover {
+    color: var(--Staff-Link-Color-Hover);
+    font-weight: bold;
 }
 
 /*--------------------------------------Resources----------------------------------*/
@@ -419,7 +758,7 @@ header {
 .pagetitle span,.pagetitle a{
     text-shadow: none;
     text-transform: Sentence;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: normal;
     color: var(--Def-Font-Color);
     position: relative;
@@ -427,8 +766,8 @@ header {
     padding-bottom: 20px;
 }
 
-.pagetitle a:hover{
-    color: #E1DF54;
+.pagetitle a:hover {
+    font-weight: bold;
 }
 
 .content ol {
@@ -439,26 +778,41 @@ header {
     list-style-type: decimal; 
 }
 
+.content ol li a, .forms a {
+    color: var(--Link-Color);
+}
+
+.content ol li a:hover, .forms a:hover {
+    color: var(--Link-Color-Hover);
+}
+
 .insurance h2,
 .forms h2 {
     padding-left: 1%;
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .insurance,
 .forms{
     padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .forms ol,.forms p{    
     padding-left: 5%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .insurance section.insuranceInfo{
     padding-left: 5%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.resourcesHR {
+    margin: 50px 0;
 }
 
 /*---------------------------Common-Conditions-lightbox---------------------------*/
@@ -468,59 +822,65 @@ header {
  }
 
 .condLinkCont {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 30px;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
  
 .condLink {
     font-size: 2rem;
     width: 300px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    color: var(--Link-Color);
+}
+
+.condLink:hover {
+    font-weight: bold;
 }
 
 .title {
     font-size: 3.5rem;
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 10px;
 }
 
 .condImg {
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#FF img {
-    width: 80%;
+#LVS, #Glaucoma, #Cataract, #DRD, #MD {
+    width: 40%;
+    margin: 0 auto;
 }
 
-#Cataract img, #LVS img {
-    width: 70%;
+#FF {
+    width: 50%;
+    margin: 0 auto;
 }
 
-#DRD img, #Glaucoma img, #MD img {
+#SDOCT, #DE {
     width: 60%;
+    margin: 0 auto;
 }
 
 .description {
     display: none;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 50px 0;
     font-size: 2rem;
 }
 
 .condButton {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 200px auto;
     padding: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 3px;
     border: 1px black solid;
 }
@@ -532,35 +892,35 @@ header {
 
 /*---------------------------Directions-&-Parking---------------------------*/
 
-.parkinglot{
-    margin-left:20px;
-    color: var(--Def-Font-Color);
-    font-size: 1.25rem;
+.parkinglot {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
 }
 
-.parkinglot b {
-    font-weight: 700;
-    line-height: 1.5;
-}
-
-.parkingheaders{font-size: 1.75rem; }
-
-.columns {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-    margin-top: -0.75rem;
-}
-
-.columns:not(:last-child) {
-    margin-bottom: calc(1.5rem - 0.75rem);
+.parkingheaders {
+    font-size: 1.8rem; 
 }
 
 .column {
     display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75rem;
+}
+
+.parkingVal {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-size: 1.6rem;
+    padding-bottom: 30px;
+}
+
+.streetParking {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: 100px;
 }
 
 #gmaps {
@@ -574,17 +934,14 @@ iframe {
 /*---------------------------------------Footer-&-Social-Btns---------------------------------------*/
 
 #bottomContainer {
-    box-shadow: inset 0 -2px 3px var(--Shadow-Color);
-    border-bottom: var(--Border-Bottom);
-    margin: 50px 0;
-    padding-bottom: 50px;
+    margin: 100px 0;
 }
 
 #bottomSection {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin:auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #siteLockCont {
@@ -632,46 +989,112 @@ footer {
 }
 
 /*----------------------------------------------Media-Queries----------------------------------------------*/
+@media (max-width: 1150px) {
+    .title1 {
+        font-size: 4rem;
+    }
+}
 
 @media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-    }
-
-    #leftbar {
-        position: relative;
-        width: 100%;
-    }
-
-    #leftcontainer {
-        height: 100%;
-        flex-direction: row;
-    }
-
-    #navFullScreen {
-        width: 20%;
+    #navFullScreen {        
+        font: 200 2rem/1.5 Helvetica, Verdana, sans-serif;
     }
 
     #logo {
         display: none;
     }
 
-    #navFullScreen {
-        flex-direction: row;
-    }
-
     header {
+        width: 95%;
         padding-top: 10px;
     }
 
-    #rightbar {
-        width: 100%;
-    }
-
     .title1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        padding-top: 20px;
     }
 
+    .title2 {
+        font-size: 2.5rem;
+    }
+
+    .hours {
+        padding-bottom: 0;
+    }
+
+    .introCont {
+        padding: 0 10px;
+    }
+
+    .intro1stLine {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .introParagraph {
+        font-size: 1.6rem;
+    }
+
+    .introList li {
+        font-size: 1.6rem;
+    }
+    
+    .telehealthDirections {
+        width: 80%;
+    }
+
+    .thDoctors {
+        flex-direction: column;
+        margin: 50px auto;
+        align-items: center;
+    }
+
+    #thLitwin {
+        margin-bottom: 20px;
+    }
+
+    .mainBody h1 {
+        font-size: 3.5rem;
+    }
+
+    /* ----Staff---- */
+
+    .pagetitle {
+        padding: 50px 0;
+    }
+
+    .Profile-Container {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .Doc-Profile {
+        width: 48vw;
+        height: 64vw;
+    }
+
+    .Profile-Card-Back p {
+        top: 10%;
+    }
+
+    /* ---Common Conditions--- */
+
+    #SDOCT {
+        width: 80%;
+    }
+
+    #DE {
+        width: 70%;
+    }
+
+    #FF {
+        width: 60%;
+    }
+
+    #Cataract, #DRD, #Glaucoma, #MD, #LVS {
+        width: 50%;
+    }
+    
     #links, #Connect, #footerButtons{
         font-size: 1.6rem;
     }
@@ -682,12 +1105,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {    
-    /*#leftcontainer a {
-        width: 0;
-        margin: 0;
-    }*/
-    
+@media (max-width: 640px) {   
     #menu {
         display: block;
     }
@@ -698,7 +1116,7 @@ footer {
         position: fixed;
         top: 0;
         z-index: 2;
-        background: var(--Div-BG-Color);        
+        background: var(--Staff-Header-BG-Color);        
     }
 
     #menuItems {
@@ -715,10 +1133,11 @@ footer {
     }
 
     .showMenuItems {
+        display: flex;
         flex-direction: column;
         min-width: 100%;
         height: 150px;
-        background-color: var(--Div-BG-Color);
+        background-color: var(--Main-BG-Color);
         font-size: 2.2rem;
         padding: 50px 0 0 5px;
         position: fixed;
@@ -735,16 +1154,90 @@ footer {
     }
 
     header {
-        padding-top: 50px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
-    .title1 {    
-        font-size: 3.5rem;
+    .title1 {  
+        font-size: 3rem;
+        padding-top: 50px;
     }
     
     .title2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        padding-bottom: 50px;
+    }
+
+    .hours, .closed {
+       display: none;
+    }
+
+    .mobileHours {  
+        display: block;      
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .mobileClosed { 
+        display: block;  
+        width:90%;
+        margin:auto;
+        font-weight: 700;
+        font-size: 1.2rem;
+        align-self: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .carouselImg {
+        width: 60vw;
+    }
+
+    .thHeader {
+        width: 95%;
+    }
+
+    .mainBody h1 {
+        padding-top: 50px;
+    }
+
+    .telehealthDirections {
+        width: 100%;
+    }
+
+    #thLitwin, #thSu {
+        width: 100%;
+    }
+
+    #thImg, #thDot {
+        display: none;
+    }
+
+    .Doc-Profile {
+        width: 75vw;
+        height: 100vw;
+    }
+
+    .parkinglot, .streetParking {
+        width: 95%;
+        margin:auto;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .parkingheaders {
+        margin-bottom: 10px;
+    }
+
+    .parkingText {
+        margin-left: 30px;
     }
 
     .insuranceInfo {
@@ -785,6 +1278,14 @@ footer {
     #publicTransit,
     #listtitle1 {
         font-size: 3rem;
+    }
+
+    #SDOCT, #FF, #DE, #Cataract, #DRD, #Glaucoma, #MD, #LVS {
+        width: 95%;
+    }
+
+    .condButton {
+        margin-bottom: 100px;
     }
 
     .box {
