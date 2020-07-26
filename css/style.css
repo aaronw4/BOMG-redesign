@@ -3,13 +3,13 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     --Def-Font-Color:black;
-    --Main-BG-Color: #fffff0;
+    --Main-BG-Color: #FFFBF3;
     --Staff-BG-Color: #6B6B41;
     --Staff-Header-BG-Color: #2B2B2B;
-    --Staff-Link-Color:#DDDDBD;
-    --Staff-Link-Color-Hover:#FFFFEE;
-    --Link-Color:#3914AF;
-    --Link-Color-Hover:#7E60DE;
+    --Staff-Link-Color:#FFFBF3;
+    --Staff-Link-Color-Hover:#FFC358;
+    --Link-Color:#3C78E1;
+    --Link-Color-Hover:#0A47B0;
     --Border-Bottom: 1px solid #fffffb;
 }
 
@@ -108,12 +108,12 @@ nav a:hover {
 header {
     width: 80%;
     text-align: center;
-    margin: 50px auto;
+    margin: 20px auto;
     padding-top: 50px;
     padding-bottom: 28px;
     background: url("../images/office.jpg") no-repeat center;   
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 5px;
     color: white;
     text-shadow: 
         -2px 2px 0 #000, 
@@ -130,31 +130,29 @@ header {
 
 .title1 {    
     font-size: 5rem;
+    padding-top: 20px;
 }
 
 .title2 {
     font-size: 3rem;
+    padding-bottom: 20px;
 }
 
 .hours {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    line-height: 35px;
 }
 
-.closed {
-    width:70%;
-    margin:auto;
-    font-weight: 700;
-    font-size: 1.2rem;
-    align-self: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.hours a {
+    color: var(--Link-Color);
+    
 }
 
-.mobileHours, .mobileClosed {
-    display: none;
+.hours a:hover {
+    color: var(--Link-Color-Hover)
 }
 
 .alert {    
@@ -595,10 +593,6 @@ header {
    font-weight:700
   }
 
-.thCont {
-    background-color: white;
-}
-
 .thHeader {    
     margin-bottom: 50px;
 }
@@ -609,6 +603,14 @@ header {
 
 .thHeader h3 {
     font-size: 2rem;
+}
+
+.thHeader h3 a {
+    color: var(--Link-Color);
+}
+
+.thHeader h3 a:hover {
+    color: var(--Link-Color-Hover);
 }
 
 .thSubCont {
@@ -628,6 +630,24 @@ header {
     height: auto;
     margin: 0 auto;
 }
+
+.telehealthDirectionsDirPage {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 1%;
+}
+
+.thDoctorsDirPage {
+    position: sticky;
+    float: right;
+    right: 1%;
+    top: 100px;
+}
+
+#thLitwinDir {
+    margin-bottom: 10px;
+}
   
 /*----------------------------------------------Staff----------------------------------------------*/
 
@@ -637,7 +657,7 @@ header {
     font-weight: 400;
     color: var(--Def-Font-Color);
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .Profile-Container {
@@ -687,7 +707,7 @@ header {
 }
 
 .Profile-Card-Front {
-    background-color: var(--Staff-BG-Color, transparent);
+    background-color: var(--Link-Color, transparent);
     color: var(--Def-Font-Color);
 }
 
@@ -699,7 +719,7 @@ header {
     font-size:3.5em;
     color: var(--Def-Font-Color);
     width: 100%;
-    background-color: var(--Staff-BG-Color);
+    background-color: var(--Link-Color);
 }
 
 .Profile-Caption h4{
@@ -716,7 +736,7 @@ header {
 }
 
 .Profile-Card-Back {
-    background-color: var(--Staff-BG-Color);
+    background-color: var(--Link-Color);
     color: white;
     transform: rotateY(180deg);
 }
@@ -989,6 +1009,27 @@ footer {
 }
 
 /*----------------------------------------------Media-Queries----------------------------------------------*/
+@media (max-width: 1200px) {
+    .thSubContDirPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telehealthDirectionsDirPage {
+        width: 80%;
+        left: 0;
+    }
+
+    .thDoctorsDirPage {
+        right: 0;
+        display: flex;
+        width: 80%;
+        margin: 50px auto 100px auto;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1150px) {
     .title1 {
         font-size: 4rem;
@@ -1039,17 +1080,17 @@ footer {
         font-size: 1.6rem;
     }
     
-    .telehealthDirections {
+    .telehealthDirections, .telehealthDirectionsDirPage {
         width: 80%;
     }
 
-    .thDoctors {
+    .thDoctors, .thDoctorsDirPage {
         flex-direction: column;
         margin: 50px auto;
         align-items: center;
     }
 
-    #thLitwin {
+    #thLitwin, #thLitwinDir {
         margin-bottom: 20px;
     }
 
@@ -1156,6 +1197,7 @@ footer {
     header {
         padding-top: 10px;
         padding-bottom: 10px;
+        margin-top: 50px;
         margin-bottom: 10px;
     }
 
@@ -1171,24 +1213,6 @@ footer {
 
     .hours, .closed {
        display: none;
-    }
-
-    .mobileHours {  
-        display: block;      
-        font-size: 1.5rem;
-        text-align: center;
-        padding-bottom: 5px;
-    }
-
-    .mobileClosed { 
-        display: block;  
-        width:90%;
-        margin:auto;
-        font-weight: 700;
-        font-size: 1.2rem;
-        align-self: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 
     .intro {
@@ -1208,11 +1232,11 @@ footer {
         padding-top: 50px;
     }
 
-    .telehealthDirections {
+    .telehealthDirections, .telehealthDirectionsDirPage {
         width: 100%;
     }
 
-    #thLitwin, #thSu {
+    #thLitwin, #thSu, #thLitwinDir {
         width: 100%;
     }
 
