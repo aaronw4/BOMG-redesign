@@ -14,73 +14,162 @@
 </head>
 
 <body>
-	<div class="container">
-
-		<div id="leftbar">
-			<div id="leftcontainer">
-				<a href="index.html" ><img src="images/logo.png" id="logo"></a>				
-				<div id="menuCont">	
-					<a href='javascript:void(0);' onclick="menu()"><img src='images/menu.png' id="menu"/></a>	
-				</div>			
-				<div id="menuItems">
-					<a class="active" href="index.html">Home</a>
-					<a href="staff.html">Our Staff</a>
-					<a href="parking.html">Directions &amp; Parking</a>
-					<a href="resources.html">Resources</a>
-					<a href="commonconditions.html">Common Conditions</a>
-				</div>
+	<div id="navBar">			
+		<div id="menuCont">	
+			<a href='javascript:void(0);' onclick="menu()"><img src='images/menu.png' id="menu"/></a>	
+		</div>	
 				
-				<nav id=navFullScreen>
-					<a class="active" href="index.html">Home</a>
-					<a href="staff.html">Our Staff</a>
-					<a href="parking.html">Directions &amp; Parking</a>
-					<a href="resources.html">Resources</a>
-					<a href="commonconditions.html">Common Conditions</a>
-				</nav>
+		<div id="menuItems">
+			<a class="active" href="index.html">Home</a>
+			<a href="staff.html">Our Staff</a>
+			<a href="parking.html">Directions &amp; Parking</a>
+			<a href="resources.html">Resources</a>
+			<a href="commonconditions.html">Common Conditions</a>
+		</div>
+		
+		<nav id=navFullScreen>
+			<img src="images/logo.png" id="logo">
+			<a class="active" href="index.html">Home</a>
+			<a href="staff.html">Our Staff</a>
+			<a href="parking.html">Directions &amp; Parking</a>
+			<a href="resources.html">Resources</a>
+			<a href="commonconditions.html">Common Conditions</a>
+		</nav>
+	</div>
+
+	<header>
+		<p class="title1">BERKELEY OPHTHALMOLOGY</p> 
+		<p class="title2">MEDICAL GROUP, INC.</p>
+	</header>
+
+	<div class="hours">		
+		<p ><strong>Office Hours:</strong> Mon - Fri (8a -12p &amp; 1p - 5p)</p>
+		<p><strong>Phone Number:</strong> (510) 548-6630 </p>
+		<a href="https://hushforms.com/medrecords" target="_blank">Secure Upload and Messaging</a>		
+	</div>
+
+	<div class="alert">
+		<p><strong>Notice to all of our patients: </strong> As we move to a new "normal" in patient care, We are taking the following necessary precautions to ensure the health, safety, and well-being of our patients, staff and doctors.</p>
+		<h4>Federal (CDC) and State guidelines for safety:</h4>
+		<ul class="square">
+			<li>All patients must wear masks during their visits.</li>
+			<li>Temperature checks will be performed upon arrival.</li>
+			<li>COVID-19 screening questions will be asked during appointment scheduling and check-in.</li>
+			<li>Exams rooms and testing equipment will be sanitized before and after each patient.</li>
+			<li>NO guests will be permitted to accompany patients unless the patient need assistance. Loved ones can participate in the visit discussion with the doctor via cell phone.</li>
+			<li>If you require medical technician guided testing, you will be roomed immediately upon check-in, tested, and checked-out expeditiously. Patients will then participate in a telemedicine visit with the physician at a separate date and time.</li>
+		</ul>
+		<p>If you have an eye emergency, require refills or you would like to schedule an appointment.<br/><br/>Please call <a href="tel:510-548-6630">(510) 548-6630</a>. (Please be aware, that we have been experiencing high call volume and are returning messages as quickly as possible)</p><br/>
+		<p>You can also message us through this link: <a href="https://hushforms.com/medrecords">Secure Upload & Messaging</a></p><br/>
+		<p>Avoid crowds, wash your hands, stay hydrated and take care of your physical needs (sleep, moderate exercise, healthy food) as best you can.</p>
+	</div>
+
+	<div class="mainBody">
+		<!-- <div class="intro"> -->
+			<!--This is where JavaScript is inserted. Inner container div class='carouselCont'----->
+			<!-- <div id="carousel"></div> -->
+			<!--imgs have class='carouselImg' ----------------------------------------------------->
+			<!-- <div class="introCont">
+				<p class="intro1stLine">Welcome to Berkeley Ophthalmology Medical Group!</p>
+				<br><br>
+				<p class="introParagraph">We offer a full range of eye-health options including:</p>
+				<br>
+				<ul class="introList">
+					<li>Visions Tests</li>
+					<li>Prescription Glasses and Contacts</li>
+					<li>Lasex</li>
+					<li>Prescriptions</li>
+				</ul>
+				<br>
+				<p class="introParagraph">
+					Thank you for visiting our site. 
+					Please scroll down for more information. 
+				</p>
+			</div>			 -->
+		<!-- </div> -->
+		
+		<div class="thCont">
+			<section class="telehealth thHeader">
+				<h1>TeleHealth</h1>
+				<br>
+				<h2>You must have an appointment scheduled to use this feature.</h2>
+				<br>
+				<h3>If you would like to schedule an appointment. Please call: (510) 548-6630 </h3>
+				<br>
+				<h3><a href="telehealth.html">Click here for directions on how to start your TeleHealth appointment.</a></h3>
+		   	</section> 
+		   	<div class="thSubCont">
+				<!-- <img class="telehealthDirections" src="https://www.bomg.org/images/PatientFlyerLitwin.png"/> -->
+				<section class="GraySection telehealth thDoctors">
+					<div class="doxyme-badge doxyme-badge-horizontal" id="thLitwin">
+						<div class="doxyme-badge-horizontal-image">
+							<img id="thImg" src="https://www.gravatar.com/avatar/ce5122473bcab61e1c719e2f0ae27499?s=240"/>
+						</div>
+						<div class="doxyme-badge-indicator" id="thDot" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="62ef0030-62e3-11ea-b1cf-9b4e23387dd7:web" data-channel="room--180045" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-content">
+							<div class="doxyme-badge-start-a-call"></div>
+							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/litwin" target="_blank">Start a telemedicine call with</a>
+							<div class="doxyme-badge-doctor-name">Dr Joshua Litwin</div>
+							<div>
+								<a class="doxyme-badge-start-button btn-primary" href="https://bomg.doxy.me/litwin" target="_blank">Enter waiting room</a>
+							</div>
+							<div>
+								<div class="doxyme-badge-powered-by">
+									<a href="https://doxy.me" target="_blank">Telemedicine</a> by
+								</div>
+								<div class="doxyme-badge-logo-link">
+									<a href="https://doxy.me" target="_blank">Doxy.me</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="doxyme-badge doxyme-badge-horizontal" id="thSu">
+						<div class="doxyme-badge-horizontal-image" >
+							<img id="thImg" src="https://www.gravatar.com/avatar/a0ab4596dd39134fc0b05a5f72ec813f?s=240"/>
+						</div>
+						<div class="doxyme-badge-indicator" id="thDot" data-subscribe-key="sub-c-4c711c18-7e53-11e5-8d3c-0619f8945a4f" data-uuid="2c493c30-6879-11ea-bdd1-6bcb465d4cc9:web" data-channel="room--181634" data-institution-id="1602" data-api-url="https://api.doxy.me"></div>
+						<div class="doxyme-badge-content">
+							<div class="doxyme-badge-start-a-call"></div>
+							<a class="doxyme-badge-start-a-call" href="https://bomg.doxy.me/drsu" rel="noreferrer" target="_blank">Start a telemedicine call with</a><div class="doxyme-badge-doctor-name">Dr. Susan Su</div>
+							<div>
+								<a class="doxyme-badge-start-button btn-primary" href="https://bomg.doxy.me/drsu" rel="noreferrer" target="_blank">Enter waiting room</a>
+							</div>
+							<div>
+								<div class="doxyme-badge-powered-by">
+									<a href="https://doxy.me" rel="noreferrer" target="_blank">Telemedicine</a> by
+								</div>
+								<div class="doxyme-badge-logo-link">
+									<a href="https://doxy.me" rel="noreferrer" target="_blank">Doxy.me</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</section>
 			</div>
 		</div>
 
-		<div id="rightbar">
-			<header>
-				<p class="title1">BERKELEY OPHTHALMOLOGY</p> 
-				<p class="title2">MEDICAL GROUP, INC.</p>
-				<p class="hours"><strong>Office Hours:</strong> Mon - Fri (8a -12p &amp; 1p - 5p)</p>
-				<p class="closed">We are closed on Thursday November 28th, 2019 & Friday November 29th, 2019 in observance of
-					Thanksgiving</p>
-			</header>
+		<h1>Below are some popular links.</h1>
+		<div class="extLinkContainer">
+			<div class="extLink" title="myCare: (Patient Portal)">
+				<a href="https://imwportal.mednetworx.com/bomg/" target="_blank"><img src="images/myCareLogo.png">
+				<div class="bottom-right">Patient Portal</div></a>
+			</div>
 
-			<div class="rightcontent">
+			<div class="extLink" title="Secure Upload (Powered by hushmail)">
+				<a href="https://hushforms.com/medrecords" target="_blank"><img src="images/HushMaillogo.png">
+				<div class="bottom-left">Secure Upload</div></a>
+			</div>
 
-				<!--This is where JavaScript is inserted. Inner container div class='carouselCont'----->
-				<div id="carousel"></div>
-				<!--imgs have class='carouselImg' ----------------------------------------------------->
-				
-				<h1>Welcome to ... We offer...</h1>
-				<h5>Below are some external links that you might find helpful.</h5>
-				<div class="extLinkContainer">
-					<div class="extLink" title="myCare: (Patient Portal)">
-						<a href="https://imwportal.mednetworx.com/bomg/" target="_blank"><img src="images/myCareLogo.png">
-						<div class="bottom-right">Patient Portal</div></a>
-					</div>
+			<div class="extLink" title="Eye Smart (English)">
+				<a href="https://www.aao.org/eye-health" target="_blank"><img src="images/aao_logo_2x.png">
+				<div class="bottom-right">EyeSmart &#x00AE;</div></a>
+			</div>
 
-					<div class="extLink" title="Secure Upload (Powered by hushmail)">
-						<a href="https://hushforms.com/medrecords" target="_blank"><img src="images/HushMaillogo.png">
-						<div class="bottom-left">Secure Upload</div></a>
-					</div>
-
-					<div class="extLink" title="Eye Smart (English)">
-						<a href="https://www.aao.org/eye-health" target="_blank"><img src="images/aao_logo_2x.png">
-						<div class="bottom-right">EyeSmart &#x00AE;</div></a>
-					</div>
-
-					<div class="extLink" title="Eye Smart (Español)">
-						<a href="https://www.aao.org/salud-ocular" target="_blank"><img src="images/aao_logo_2x.png">
-						<div class="bottom-right">OjosSanos &#x2122;</div></a>
-					</div>
-				</div>
+			<div class="extLink" title="Eye Smart (Español)">
+				<a href="https://www.aao.org/salud-ocular" target="_blank"><img src="images/aao_logo_2x.png">
+				<div class="bottom-right">OjosSanos &#x2122;</div></a>
 			</div>
 		</div>
-
 	</div>
 
 	<div id="bottomContainer">
@@ -112,16 +201,6 @@
 			</div>
 		</div>
 	</div>
-
-	<footer>
-		<div id="footerButtons">
-			<a href="index.html">Home</a>
-			<a href="staff.html">Our Staff</a>
-			<a href="parking.html">Directions &amp; Parking</a>
-			<a href="resources.html">Resources</a>
-			<a href="commonconditions.html">Common Conditions</a>
-		</div>
-	</footer>
 
 	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
