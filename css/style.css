@@ -157,6 +157,7 @@ header {
 
 .alert {    
   width:80%;
+  max-width: 1950px;
   padding: 20px;
   margin: 10px auto;
   border-radius: 4px;
