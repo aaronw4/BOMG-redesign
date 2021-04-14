@@ -1,5 +1,5 @@
 # bomg
-Redesigned Website
+Redesigned Website  https://aaronw4.github.io/BOMG-redesign/
 
 In addition to redesigning the website's appearance, it was also made responsive. This allows the user to change the font-size without changing the size of the web-page.
 
