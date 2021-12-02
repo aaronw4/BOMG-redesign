@@ -1,49 +1,25 @@
-// Type 'npx babel --watch src --out-dir . --presets react-app/prod'
-// in the terminal if changes are made to the index.js file.
-// This will update the website
-'use strict';
+var count = 0
+showDoctor(count)
 
-const images = [
-    'images/jlitwin.jpg',
-    'images/rlitwin.png',
-    'images/su.jpg'
-]
-// Dont forget to run code above when updating images
-
-class Carousel extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            count: 0,
-            start: false
-        }
-    }
-
-    render() {  
-        var max = images.length;
-
-        const changeImg = () => {
-            if (this.state.count === max - 1) {
-                this.setState({count: 0});                
-            } else {
-                var newNumber = Number(this.state.count) + 1;
-                this.setState({count: newNumber});                
-            } 
-        }
-
-        const timer = () => {
-            if (this.state.start === false) {
-            setInterval(changeImg, 2000); /* <-- Change time by changing number (2000 = 2 seconds)*/
-            this.setState({start: true});
-            }
-        }
-
-        return(
-            <div className='carouselCont' onLoad={timer}>         
-                <img src={images[this.state.count]} className='carouselImg'/>
-            </div>
-        );
-    }
+function changeCount(n) {
+    showDoctor(count += n)
 }
 
-ReactDOM.render(<Carousel/>, document.getElementById('carousel'));
+function clickDot(n) {
+    showDoctor(count = n)
+}
+
+function showDoctor(n) {
+    var doctors = document.getElementsByClassName('Doc-Profile')
+    var dots = document.getElementsByClassName('dot')
+    if (n >= doctors.length) {count = 0}
+    if (n < 0) {count = doctors.length - 1}
+    for (var i = 0; i < doctors.length; i++) {
+        doctors[i].style.display = 'none'
+    }
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '')
+    }
+    doctors[count].style.display = 'block'
+    dots[count].className += ' active'
+}
