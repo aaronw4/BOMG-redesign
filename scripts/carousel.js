@@ -18,8 +18,8 @@ function showDoctor(n) {
         doctors[i].style.display = 'none'
     }
     for (var i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '')
+        dots[i].className = dots[i].className.replace(' activeDot', '')
     }
     doctors[count].style.display = 'block'
-    dots[count].className += ' active'
+    dots[count].className += ' activeDot'
 }
