@@ -664,18 +664,19 @@ header {
 .Profile-Container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     font-size: .5rem;
-    margin-bottom: 200px;
-    margin-right: 5px;
+    margin-bottom: 20px;
 }
 
 .Doc-Profile {
-    margin: auto;
     background-color: transparent;
     width: 27vw;
     height: 36vw;
     perspective: 1000px;
-    margin-bottom: 10px;
+    margin: 0 20px;
+    display: none;
 }
 
 .Doc-Profile:hover .Profile-Card {
@@ -772,6 +773,42 @@ header {
 .Profile-Card-Back p a:hover {
     color: var(--Staff-Link-Color-Hover);
     font-weight: bold;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    height: 25px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: grey;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.activeDot, .dot:hover {
+    background-color: #717171;
 }
 
 /*--------------------------------------Resources----------------------------------*/
@@ -892,9 +929,9 @@ header {
 
 .description {
     display: none;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 50px;
     font-size: 2rem;
 }
 
@@ -1103,11 +1140,6 @@ footer {
 
     .pagetitle {
         padding: 50px 0;
-    }
-
-    .Profile-Container {
-        flex-direction: column;
-        margin-bottom: 100px;
     }
 
     .Doc-Profile {
