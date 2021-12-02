@@ -11,6 +11,7 @@
 	<title>Berkeley Ophthalmology Medical Group, Inc.</title>
 	<link href="images/favicon.ico" rel="shortcut icon">
 	<script src="scripts/menu.js"></script>
+	<script src='scripts/carousel.js' async></script>
 </head>
 
 <body>
@@ -53,6 +54,8 @@
 		</div>
 
 		<div class="Profile-Container">
+			<a class="prev" onclick="changeCount(-1)">&#10094;</a>
+
 			<div class="Doc-Profile">
 				<div class="Profile-Card">
 					<div class="Profile-Card-Front">
@@ -149,6 +152,14 @@
 					</div>
 				</div>
 			</div>
+			
+  			<a class="next" onclick="changeCount(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align:center">
+			<span class="dot" onclick="clickDot(0)"></span>
+			<span class="dot" onclick="clickDot(1)"></span>
+			<span class="dot" onclick="clickDot(2)"></span>
 		</div>
 	</div>
 
