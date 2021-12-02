@@ -39,7 +39,7 @@ const Data = [
         id: 'MD',
         name: 'Macular Degeneration',
         image: 'images/macdegen.png',
-        description: 'More and more common as people age. Macular degeneration comes in two forms. Dry macular degeneration is a slow process which damages the retinal cells that give us sharp vision, especially for reading. Wet macular degeneration usually occurs suddenly with bleeding into a macula already afflicted with dry macular degeneration. Prevention involves <u>vitamin therapy</u> for dry macular degeneration. Wet macular degeneration requires use of medications that close off the vessels that are bleeding into the macula. Diagnosis is made by visualizing the macula by Spectral Domain OCT, which allows visualization of all retinal layers in cross section. '
+        description: 'More and more common as people age. Macular degeneration comes in two forms. Dry macular degeneration is a slow process which damages the retinal cells that give us sharp vision, especially for reading. Wet macular degeneration usually occurs suddenly with bleeding into a macula already afflicted with dry macular degeneration. Prevention involves vitamin therapy for dry macular degeneration. Wet macular degeneration requires use of medications that close off the vessels that are bleeding into the macula. Diagnosis is made by visualizing the macula by Spectral Domain OCT, which allows visualization of all retinal layers in cross section. '
     },
     {
         id: 'LVS',
