@@ -96,32 +96,3 @@ Data.forEach(element => {
 })
 
 common.appendChild(section)
-
-// class App extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {display: true};
-//         this.click = this.click.bind(this);
-//       }  
-    
-//     click(e) {
-//         this.setState({display: !this.state.display});
-//     }
-
-//     render() {  
-//         return(
-//             <div >               
-//                 {Data.map(condition => 
-//                 <div className='condCont' id={condition.id}>
-//                     <a name={condition.id}><h3 className='title'>{condition.name}</h3></a>                    
-//                     <img src={condition.image} className='condImg'/>
-//                     <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
-//                     <button onClick={this.click} className='condButton'>{this.state.display ? 'Show Description': 'Hide Description'}</button>
-//                 </div>
-//             )}
-//             </div>
-//         );
-//     }
-// }
-
- 
