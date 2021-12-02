@@ -21,13 +21,13 @@ const Data = [
         id: 'Cataract',
         name: 'Cataract',
         image: 'images/cataract.png',
-        description: 'A frequent cause of glare, especially when driving at night. Modern cataract surgery is much less intrusive than in the past. Before deciding on surgery the need for glasses must be evaluated as well as the presence of macular degeneration. A significant cataract will usually cause vision to drop markedly when a glare tester is used in the office. Vision will improve when tested with a pinhole, indicating that behind the cataract lies a healthy retina and a good surgical result can be expected.</p>'
+        description: 'A frequent cause of glare, especially when driving at night. Modern cataract surgery is much less intrusive than in the past. Before deciding on surgery the need for glasses must be evaluated as well as the presence of macular degeneration. A significant cataract will usually cause vision to drop markedly when a glare tester is used in the office. Vision will improve when tested with a pinhole, indicating that behind the cataract lies a healthy retina and a good surgical result can be expected.'
     },
     {
         id: 'DRD',
         name: 'Diabetic Retinal Damage',
         image: 'images/diabeticret.png',
-        description:'Public health doctors recommend that the retina of every diabetic be examined once a year and any significant bleeding that occurs be considered for laser treatment. Spectral domain OCT shows all the retinal layers in both cross section and in three dimensions enabling us to see previously invisible processes like subtle swelling of the retina. This technique is useful in macular degeneration, and glaucoma as well.</p>'
+        description:'Public health doctors recommend that the retina of every diabetic be examined once a year and any significant bleeding that occurs be considered for laser treatment. Spectral domain OCT shows all the retinal layers in both cross section and in three dimensions enabling us to see previously invisible processes like subtle swelling of the retina. This technique is useful in macular degeneration, and glaucoma as well.'
     },
     {
         id: 'Glaucoma',
@@ -55,7 +55,6 @@ let section = document.createElement('div')
 Data.forEach(element => {
     let container = document.createElement('div')
     container.setAttribute('class', 'condCont')
-    container.setAttribute('id', element.id)
 
     let anchor = document.createElement('a')
     anchor.setAttribute('name', element.id)
@@ -64,34 +63,65 @@ Data.forEach(element => {
     header.textContent = element.name
     anchor.appendChild(header)
 
-    
+    let image = document.createElement('img')
+    image.setAttribute('src', element.image)
+    image.setAttribute('class', 'condImg')
+    image.setAttribute('id', element.id)
+
+    let description = document.createElement('p')
+    description.setAttribute('class', 'description display')
+    description.textContent = element.description
+
+    let button = document.createElement('button')
+    button.setAttribute('class', 'condButton')
+    button.textContent = 'Show Description'
+    button.addEventListener('click', () => {
+        let classes = description.classList
+        let result = classes.toggle('display')
+
+        if (result) {
+            description.style.display = 'none'
+            button.textContent = 'Show Description'
+        } else {
+            description.style.display = 'block'
+            button.textContent = 'Hide Description'
+        }
+    })
+
+    container.appendChild(anchor)
+    container.appendChild(image)
+    container.appendChild(description)
+    container.appendChild(button)
+    section.appendChild(container)
 })
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {display: true};
-        this.click = this.click.bind(this);
-      }  
-    
-    click(e) {
-        this.setState({display: !this.state.display});
-    }
+common.appendChild(section)
 
-    render() {  
-        return(
-            <div >               
-                {Data.map(condition => 
-                <div className='condCont' id={condition.id}>
-                    <a name={condition.id}><h3 className='title'>{condition.name}</h3></a>                    
-                    <img src={condition.image} className='condImg'/>
-                    <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
-                    <button onClick={this.click} className='condButton'>{this.state.display ? 'Show Description': 'Hide Description'}</button>
-                </div>
-            )}
-            </div>
-        );
-    }
-}
+// class App extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {display: true};
+//         this.click = this.click.bind(this);
+//       }  
+    
+//     click(e) {
+//         this.setState({display: !this.state.display});
+//     }
+
+//     render() {  
+//         return(
+//             <div >               
+//                 {Data.map(condition => 
+//                 <div className='condCont' id={condition.id}>
+//                     <a name={condition.id}><h3 className='title'>{condition.name}</h3></a>                    
+//                     <img src={condition.image} className='condImg'/>
+//                     <p style={{display: this.state.display ? 'none': 'block'}} className='description'>{condition.description}</p>
+//                     <button onClick={this.click} className='condButton'>{this.state.display ? 'Show Description': 'Hide Description'}</button>
+//                 </div>
+//             )}
+//             </div>
+//         );
+//     }
+// }
 
  
