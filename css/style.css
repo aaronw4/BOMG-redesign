@@ -663,10 +663,8 @@ header {
 
 .Profile-Container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: .5rem;
     margin-bottom: 20px;
 }
 
@@ -1006,6 +1004,10 @@ iframe {
     width: 20%;
 }
 
+.bottomLogo {
+    width: 10vw;
+}
+
 .fa-facebook {
     color: #FFF;
     background-color: #4169E1;
@@ -1144,7 +1146,7 @@ footer {
 
     .Doc-Profile {
         width: 48vw;
-        height: 64vw;
+        height: 70vw;
     }
 
     .Profile-Card-Back p {
@@ -1279,7 +1281,11 @@ footer {
 
     .Doc-Profile {
         width: 75vw;
-        height: 100vw;
+        height: 150vw;
+    }
+    
+    .Profile-Card-Back p {
+        top: 20%;
     }
 
     .parkinglot, .streetParking {
